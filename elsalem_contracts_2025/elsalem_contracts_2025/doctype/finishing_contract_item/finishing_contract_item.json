@@ -1,0 +1,165 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-18 16:30:18.857921",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "business_statement_num",
+  "exceed_business_item_limit",
+  "business_statement",
+  "uom",
+  "previous_qty",
+  "current_qty",
+  "total_qty",
+  "rate",
+  "total",
+  "account",
+  "default_uom",
+  "conversion_factor",
+  "project",
+  "cost_center",
+  "percentage_of_completion",
+  "is_group_",
+  "group",
+  "business_statement_doctype",
+  "item_description"
+ ],
+ "fields": [
+  {
+   "fetch_from": "business_statement_num.description",
+   "fieldname": "business_statement",
+   "fieldtype": "Text",
+   "in_list_view": 1,
+   "label": "Description"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group_",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "group",
+   "fieldtype": "Data",
+   "label": "Group"
+  },
+  {
+   "columns": 1,
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "default": "0",
+   "fieldname": "previous_qty",
+   "fieldtype": "Float",
+   "label": "Previous Qty",
+   "read_only": 1
+  },
+  {
+   "fieldname": "current_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Current Qty"
+  },
+  {
+   "fieldname": "total_qty",
+   "fieldtype": "Float",
+   "label": "Total Qty",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "rate",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rate"
+  },
+  {
+   "fieldname": "total",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Total",
+   "read_only": 1
+  },
+  {
+   "fieldname": "business_statement_doctype",
+   "fieldtype": "Link",
+   "label": "Business Statement Doctype",
+   "options": "DocType"
+  },
+  {
+   "fieldname": "business_statement_num",
+   "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
+   "label": "Business Statement",
+   "options": "business_statement_doctype",
+   "reqd": 1
+  },
+  {
+   "fieldname": "account",
+   "fieldtype": "Link",
+   "label": "Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "default_uom",
+   "fieldtype": "Link",
+   "label": "Default UOM",
+   "options": "UOM",
+   "read_only": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "conversion_factor",
+   "fieldtype": "Float",
+   "label": "Conversion Factor",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cost_center",
+   "fieldtype": "Link",
+   "label": "Cost Center",
+   "options": "Cost Center"
+  },
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "percentage_of_completion",
+   "fieldtype": "Percent",
+   "label": "Percentage of Completion",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "exceed_business_item_limit",
+   "fieldtype": "Check",
+   "label": "Exceed Business Item Limit"
+  },
+  {
+   "fieldname": "item_description",
+   "fieldtype": "Text",
+   "label": "Item Description"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-21 23:00:15.702438",
+ "modified_by": "Administrator",
+ "module": "Elsalem Contracts 2025",
+ "name": "Finishing Contract Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

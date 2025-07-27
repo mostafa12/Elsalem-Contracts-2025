@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include elsalem_contracts_2025 *.css
+recursive-include elsalem_contracts_2025 *.csv
+recursive-include elsalem_contracts_2025 *.html
+recursive-include elsalem_contracts_2025 *.ico
+recursive-include elsalem_contracts_2025 *.js
+recursive-include elsalem_contracts_2025 *.json
+recursive-include elsalem_contracts_2025 *.md
+recursive-include elsalem_contracts_2025 *.png
+recursive-include elsalem_contracts_2025 *.py
+recursive-include elsalem_contracts_2025 *.svg
+recursive-include elsalem_contracts_2025 *.txt
+recursive-exclude elsalem_contracts_2025 *.pyc

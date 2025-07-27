@@ -1,0 +1,29 @@
+[
+ {
+  "absolute_value": 0,
+  "align_labels_right": 0,
+  "css": "",
+  "custom_format": 1,
+  "default_print_language": "en-US",
+  "disabled": 0,
+  "doc_type": "Issue",
+  "docstatus": 0,
+  "doctype": "Print Format",
+  "font": "Default",
+  "format_data": null,
+  "html": "<h2 style=\"text-align:center;\">Tenant Work Order</h2>\r\n<table style=\"width:100%; border-collapse: collapse;\" border=\"1\">\r\n  <tr>\r\n    <td><b>Caller:</b> {{ doc.caller_name or \"\" }}</td>\r\n    <td><b>Requester:</b> {{ doc.requester or \"\" }}</td>\r\n    <td><b>Building/Floor:</b> {{ doc.building_floor or \"\" }}</td>\r\n    <td><b>Date:</b> {{ doc.date or \"\" }}</td>\r\n  </tr>\r\n  <tr>\r\n    <td><b>Call Time:</b> {{ doc.call_time or \"\" }}</td>\r\n    <td colspan=\"3\"><b>Problem Description:</b> {{ doc.problem_description or \"\" }}</td>\r\n  </tr>\r\n</table>\r\n\r\n<br>\r\n\r\n<h4>Spare Parts Needed:</h4>\r\n<p>{{ doc.spare_parts_needed or \"\" }}</p>\r\n\r\n<h4>Spare Parts Used:</h4>\r\n<p>{{ doc.spare_parts_used or \"\" }}</p>\r\n\r\n<h4>Work Done:</h4>\r\n<p>{{ doc.work_done or \"\" }}</p>\r\n\r\n<h4>Tenant Comments:</h4>\r\n<p>{{ doc.tenant_comments or \"\" }}</p>\r\n\r\n<h4>Engineer Comments:</h4>\r\n<p>{{ doc.engineer_comments or \"\" }}</p>\r\n\r\n<h4>Result:</h4>\r\n<p>{{ doc.result or \"\" }}</p>\r\n\r\n<br>\r\n\r\n<table style=\"width:100%;\" border=\"0\">\r\n  <tr>\r\n    <td><b>Engineer Signature:</b> _____________</td>\r\n    <td><b>Coordinator:</b> _____________</td>\r\n    <td><b>Owner Signature:</b> _____________</td>\r\n  </tr>\r\n</table>\r\n",
+  "line_breaks": 0,
+  "modified": "2025-07-13 14:54:07.448456",
+  "module": "Support",
+  "name": "Issue Format",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "print_format_builder": 0,
+  "print_format_type": "Jinja",
+  "raw_commands": null,
+  "raw_printing": 0,
+  "show_section_headings": 0,
+  "standard": "No"
+ }
+]

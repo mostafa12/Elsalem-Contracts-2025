@@ -1,0 +1,198 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2023-06-14 15:05:13.686495",
+  "name": "f5ec1f85f8",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "GL Entry",
+  "report": "General Ledger",
+  "roles": [
+   {
+    "parent": "f5ec1f85f8",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "f5ec1f85f8",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "f5ec1f85f8",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Auditor"
+   },
+   {
+    "parent": "f5ec1f85f8",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Admin"
+   },
+   {
+    "parent": "f5ec1f85f8",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "President"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2023-06-14 15:06:56.494939",
+  "name": "0c8ce17759",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Sales Invoice",
+  "report": "Accounts Receivable",
+  "roles": [
+   {
+    "parent": "0c8ce17759",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "0c8ce17759",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "0c8ce17759",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Admin"
+   },
+   {
+    "parent": "0c8ce17759",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "President"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2023-06-14 15:11:09.173893",
+  "name": "7ba07e8f72",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Purchase Invoice",
+  "report": "Accounts Payable",
+  "roles": [
+   {
+    "parent": "7ba07e8f72",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "7ba07e8f72",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "7ba07e8f72",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "7ba07e8f72",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Auditor"
+   },
+   {
+    "parent": "7ba07e8f72",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Admin"
+   },
+   {
+    "parent": "7ba07e8f72",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "President"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2024-12-18 11:21:10.064758",
+  "name": "d980030a00",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Stock Ledger Entry",
+  "report": "Stock Balance",
+  "roles": [
+   {
+    "parent": "d980030a00",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock User"
+   },
+   {
+    "parent": "d980030a00",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "d980030a00",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock Manager"
+   }
+  ]
+ },
+ {
+  "docstatus": 0,
+  "doctype": "Custom Role",
+  "modified": "2024-12-18 11:21:23.710013",
+  "name": "9a050267aa",
+  "page": null,
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "ref_doctype": "Stock Ledger Entry",
+  "report": "Stock Ledger",
+  "roles": [
+   {
+    "parent": "9a050267aa",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock User"
+   },
+   {
+    "parent": "9a050267aa",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "9a050267aa",
+    "parentfield": "roles",
+    "parenttype": "Custom Role",
+    "role": "Stock Manager"
+   }
+  ]
+ }
+]

@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-22 20:01:22.034108",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "vendor_evaluation",
+  "evaluation_date",
+  "supplier",
+  "purchase_order",
+  "purchase_order_vendor_evaluation",
+  "total_supplier_score_",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "vendor_evaluation",
+   "fieldtype": "Heading",
+   "label": "Vendor Evaluation"
+  },
+  {
+   "fieldname": "evaluation_date",
+   "fieldtype": "Date",
+   "label": "Evaluation Date"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "purchase_order",
+   "fieldtype": "Link",
+   "label": "Purchase Order",
+   "options": "Purchase Order"
+  },
+  {
+   "fieldname": "purchase_order_vendor_evaluation",
+   "fieldtype": "Table",
+   "label": "Purchase Order Vendor Evaluation",
+   "options": "Purchase Order Vendor Evaluation"
+  },
+  {
+   "fieldname": "total_supplier_score_",
+   "fieldtype": "Float",
+   "label": "Total Supplier Score %"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text",
+   "label": "Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-07-22 20:03:00.685361",
+ "modified_by": "Administrator",
+ "module": "Elsalem Contracts 2025",
+ "name": "Vendor Evaluation",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

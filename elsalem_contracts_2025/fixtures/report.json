@@ -1,0 +1,2560 @@
+[
+ {
+  "add_total_row": 1,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": "{\"filters\":[[\"Payment Entry\",\"payment_type\",\"=\",\"Receive\"]],\"fields\":[[\"name\",\"Payment Entry\"],[\"payment_type\",\"Payment Entry\"],[\"posting_date\",\"Payment Entry\"],[\"mode_of_payment\",\"Payment Entry\"],[\"party_type\",\"Payment Entry\"],[\"party\",\"Payment Entry\"],[\"reference_date\",\"Payment Entry\"]],\"order_by\":\"`tabPayment Entry`.`modified` desc\",\"add_totals_row\":0,\"page_length\":20,\"column_widths\":{\"name\":120,\"payment_type\":120,\"posting_date\":120,\"mode_of_payment\":120,\"party_type\":120,\"party\":120,\"reference_date\":182},\"group_by\":null}",
+  "letter_head": null,
+  "modified": "2023-12-05 21:46:08.592200",
+  "module": "Accounts",
+  "name": "\u062a\u0642\u0631\u064a\u0631 \u0627\u0644\u0639\u0645\u0644\u0627\u0621",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Payment Entry",
+  "reference_report": null,
+  "report_name": "\u062a\u0642\u0631\u064a\u0631 \u0627\u0644\u0639\u0645\u0644\u0627\u0621",
+  "report_script": null,
+  "report_type": "Report Builder",
+  "roles": [
+   {
+    "parent": "\u062a\u0642\u0631\u064a\u0631 \u0627\u0644\u0639\u0645\u0644\u0627\u0621",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "\u062a\u0642\u0631\u064a\u0631 \u0627\u0644\u0639\u0645\u0644\u0627\u0621",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts Manager"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": "{\"filters\":[],\"fields\":[[\"name\",\"Supplier\"],[\"supplier_name\",\"Supplier\"],[\"supplier_group\",\"Supplier\"]],\"order_by\":\"`tabSupplier`.`modified` asc\",\"add_totals_row\":0,\"page_length\":500,\"column_widths\":{\"name\":320,\"supplier_name\":331,\"supplier_group\":120},\"group_by\":null}",
+  "letter_head": null,
+  "modified": "2022-10-23 11:11:24.495057",
+  "module": "Buying",
+  "name": "Supplier List",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Supplier",
+  "reference_report": null,
+  "report_name": "Supplier List",
+  "report_script": null,
+  "report_type": "Report Builder",
+  "roles": [
+   {
+    "parent": "Supplier List",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "Supplier List",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase Manager"
+   },
+   {
+    "parent": "Supplier List",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase Master Manager"
+   },
+   {
+    "parent": "Supplier List",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   },
+   {
+    "parent": "Supplier List",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock Manager"
+   },
+   {
+    "parent": "Supplier List",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "Supplier List",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts Manager"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": "{\"filters\":[[\"Payment Entry\",\"cost_center\",\"=\",\"1405 - ASR\",false],[\"Payment Entry\",\"payment_type\",\"=\",\"Receive\"]],\"fields\":[[\"name\",\"Payment Entry\"],[\"payment_type\",\"Payment Entry\"],[\"posting_date\",\"Payment Entry\"],[\"mode_of_payment\",\"Payment Entry\"],[\"party_type\",\"Payment Entry\"],[\"party\",\"Payment Entry\"],[\"reference_date\",\"Payment Entry\"],[\"payment_method\",\"Payment Entry\"],[\"paid_amount\",\"Payment Entry\"],[\"paid_from_account_currency\",\"Payment Entry\"]],\"order_by\":\"`tabPayment Entry`.`modified` desc\",\"add_totals_row\":true,\"page_length\":100,\"column_widths\":{\"name\":120,\"payment_type\":120,\"posting_date\":120,\"mode_of_payment\":120,\"party_type\":120,\"party\":176,\"reference_date\":120,\"payment_method\":120,\"paid_amount\":120,\"paid_from_account_currency\":120},\"group_by\":null}",
+  "letter_head": null,
+  "modified": "2023-12-05 21:54:10.092320",
+  "module": "Accounts",
+  "name": "\u0627\u0648\u0631\u0627\u0642 \u0642\u0628\u0636 \u0627\u0644\u0639\u0645\u0644\u0627\u0621 30/6/2022",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Payment Entry",
+  "reference_report": null,
+  "report_name": "\u0627\u0648\u0631\u0627\u0642 \u0642\u0628\u0636 \u0627\u0644\u0639\u0645\u0644\u0627\u0621 30/6/2022",
+  "report_script": null,
+  "report_type": "Report Builder",
+  "roles": [
+   {
+    "parent": "\u0627\u0648\u0631\u0627\u0642 \u0642\u0628\u0636 \u0627\u0644\u0639\u0645\u0644\u0627\u0621 30/6/2022",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "\u0627\u0648\u0631\u0627\u0642 \u0642\u0628\u0636 \u0627\u0644\u0639\u0645\u0644\u0627\u0621 30/6/2022",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts Manager"
+   }
+  ]
+ },
+ {
+  "add_total_row": 1,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [
+   {
+    "fieldname": "account",
+    "fieldtype": "Select",
+    "label": "Account",
+    "mandatory": 1,
+    "options": "3271 - \u0627\u0644\u062a\u0632\u0627\u0645\u0627\u062a \u0648\u062d\u062f\u0627\u062a \u062a\u062d\u062a \u0627\u0644\u062a\u0633\u0644\u064a\u0645 - ASR\n3281 - \u0625\u062f\u0627\u0631\u0629 \u0635\u064a\u0627\u0646\u0629 \u0627\u0644\u0645\u0634\u0631\u0648\u0639 - ASR",
+    "parent": "Customer Balance",
+    "parentfield": "filters",
+    "parenttype": "Report",
+    "wildcard_filter": 0
+   },
+   {
+    "fieldname": "company",
+    "fieldtype": "Link",
+    "label": "Company",
+    "mandatory": 1,
+    "options": "Company",
+    "parent": "Customer Balance",
+    "parentfield": "filters",
+    "parenttype": "Report",
+    "wildcard_filter": 0
+   },
+   {
+    "fieldname": "from_date",
+    "fieldtype": "Date",
+    "label": "From Date",
+    "mandatory": 1,
+    "options": null,
+    "parent": "Customer Balance",
+    "parentfield": "filters",
+    "parenttype": "Report",
+    "wildcard_filter": 0
+   },
+   {
+    "fieldname": "to_date",
+    "fieldtype": "Date",
+    "label": "To Date",
+    "mandatory": 1,
+    "options": null,
+    "parent": "Customer Balance",
+    "parentfield": "filters",
+    "parenttype": "Report",
+    "wildcard_filter": 0
+   }
+  ],
+  "is_standard": "No",
+  "javascript": null,
+  "json": null,
+  "letter_head": null,
+  "modified": "2022-12-04 20:07:54.996494",
+  "module": "Accounts",
+  "name": "Customer Balance",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": "SELECT \n\tparty \"Customer:Link/Customer\",\n\tSUM(debit-credit)*-1 as \"Customer Balance:Currency\"\nFROM\n\t`tabGL Entry`\nWHERE\n\taccount = %(account)s and\n\tis_cancelled IS NOT NULL\nAND\n\tcompany = %(company)s\nAND\n\tposting_date BETWEEN %(from_date)s AND %(to_date)s\nGROUP BY\n\tparty\nHAVING\n   SUM(debit-credit) !=0;",
+  "ref_doctype": "GL Entry",
+  "reference_report": null,
+  "report_name": "Customer Balance",
+  "report_script": null,
+  "report_type": "Query Report",
+  "roles": [
+   {
+    "parent": "Customer Balance",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "Customer Balance",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "Customer Balance",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "add_total_row": 1,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 1,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [
+   {
+    "fieldname": "company",
+    "fieldtype": "Link",
+    "label": "Company",
+    "mandatory": 1,
+    "options": "Company",
+    "parent": "CB",
+    "parentfield": "filters",
+    "parenttype": "Report",
+    "wildcard_filter": 0
+   },
+   {
+    "fieldname": "from_date",
+    "fieldtype": "Date",
+    "label": "From Date",
+    "mandatory": 1,
+    "options": null,
+    "parent": "CB",
+    "parentfield": "filters",
+    "parenttype": "Report",
+    "wildcard_filter": 0
+   },
+   {
+    "fieldname": "to_date",
+    "fieldtype": "Date",
+    "label": "To Date",
+    "mandatory": 1,
+    "options": null,
+    "parent": "CB",
+    "parentfield": "filters",
+    "parenttype": "Report",
+    "wildcard_filter": 0
+   }
+  ],
+  "is_standard": "No",
+  "javascript": null,
+  "json": null,
+  "letter_head": null,
+  "modified": "2023-06-06 14:48:08.224676",
+  "module": "Accounts",
+  "name": "CB",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": "SELECT \n\tparty \"Customer:Link/Customer\",\n\tSUM(debit-credit)*-1 as \"Customer Balance:Currency\"\nFROM\n\t`tabGL Entry`\nWHERE\n\tis_cancelled IS NOT NULL and\n\tparty_type = Customer\nAND\n\tcompany = %(company)s\nAND\n\tposting_date BETWEEN %(from_date)s AND %(to_date)s\nGROUP BY\n\tparty\nHAVING\n   SUM(debit-credit) !=0;",
+  "ref_doctype": "GL Entry",
+  "reference_report": null,
+  "report_name": "CB",
+  "report_script": null,
+  "report_type": "Query Report",
+  "roles": [
+   {
+    "parent": "CB",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "CB",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "CB",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": "{\"filters\":[[\"Purchase Invoice\",\"docstatus\",\"=\",\"1\",false],[\"Purchase Invoice\",\"taxes_and_charges\",\"=\",\"\u0636\u0631\u064a\u0628\u0629 \u0627\u0644\u0642\u064a\u0645\u0629 \u0627\u0644\u0645\u0636\u0627\u0641\u0629 \u0648\u0627\u0644\u062e\u0635\u0645 - ASR\",false],[\"Purchase Taxes and Charges\",\"rate\",\"=\",14,false],[\"Purchase Invoice\",\"company\",\"=\",\"Al Salem Realestate\"]],\"fields\":[[\"name\",\"Purchase Invoice\"],[\"company\",\"Purchase Invoice\"],[\"supplier_name\",\"Purchase Invoice\"],[\"account_head\",\"Purchase Taxes and Charges\"],[\"rate\",\"Purchase Taxes and Charges\"],[\"tax_amount\",\"Purchase Taxes and Charges\"]],\"order_by\":\"`tabPurchase Invoice`.`modified` desc\",\"add_totals_row\":true,\"page_length\":500,\"column_widths\":{\"name\":120,\"company\":120,\"supplier_name\":120,\"Purchase Taxes and Charges:account_head\":213,\"Purchase Taxes and Charges:rate\":120,\"Purchase Taxes and Charges:tax_amount\":120},\"group_by\":null}",
+  "letter_head": null,
+  "modified": "2022-12-06 10:26:29.723930",
+  "module": "Accounts",
+  "name": "taxes report",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Purchase Invoice",
+  "reference_report": null,
+  "report_name": "taxes report",
+  "report_script": null,
+  "report_type": "Report Builder",
+  "roles": [
+   {
+    "parent": "taxes report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "taxes report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "taxes report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "taxes report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "add_total_row": 1,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [
+   {
+    "fieldname": "company",
+    "fieldtype": "Link",
+    "label": "Company",
+    "mandatory": 1,
+    "options": "Company",
+    "parent": "Asset",
+    "parentfield": "filters",
+    "parenttype": "Report",
+    "wildcard_filter": 0
+   },
+   {
+    "fieldname": "physical_year",
+    "fieldtype": "Link",
+    "label": "Fiscal Year",
+    "mandatory": 1,
+    "options": "Fiscal Year",
+    "parent": "Asset",
+    "parentfield": "filters",
+    "parenttype": "Report",
+    "wildcard_filter": 0
+   }
+  ],
+  "is_standard": "No",
+  "javascript": null,
+  "json": null,
+  "letter_head": null,
+  "modified": "2023-01-02 11:49:51.077936",
+  "module": "Assets",
+  "name": "Asset",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": "SELECT\n    SS.company                  \"Company:Data:200\",\n    SS.name                     \"Asset Number:Link/Asset:200\",\n    SS.asset_name               \"Asset Name:Data:200\",\n    SS.status                   \"Status:Data:200\",\n    SS.location                 \"Location:Data:200\",\n    SS.asset_category           \"Asset Category:Link/Asset Category:200\",\n    SS.purchase_date            \"Purchase Date:Date:150\",\n    SS.available_for_use_date   \"Available For Use Date:Date:150\",\n    SS.gross_purchase_amount    \"Gross Purchase:Currency:150\",\n    SS.opening_accumulated_depreciation  \"Opening Accumulated Depreciation:Currency\",\n    (\n        SELECT \n            SUM(DS.depreciation_amount)\n        FROM\n            `tabDepreciation Schedule` AS DS\n        WHERE\n            DS.journal_entry IS NOT NULL\n        AND\n            DS.schedule_date like CONCAT(%(physical_year)s ,'-%%-%%')\n        AND\n            DS.parent = SS.name\n    )   \"Depreciation Amount:Currency\",\n    MAX(DS.accumulated_depreciation_amount) \"Closing Accumulated Depreciation:Currency:200\",\n    (SS.gross_purchase_amount - MAX(DS.accumulated_depreciation_amount)) \"Net Book Value:Currency:200\"\nFROM\n    `tabAsset` AS SS\nJOIN \n    `tabDepreciation Schedule` AS DS\nON \n    SS.name = DS.parent\nWHERE \n    SS.docstatus = 1\nAND\n    DS.journal_entry IS NOT NULL\nAND\n    SS.company = %(company)s\nGroup By\n    SS.name; ",
+  "ref_doctype": "Asset",
+  "reference_report": null,
+  "report_name": "Asset",
+  "report_script": null,
+  "report_type": "Query Report",
+  "roles": [
+   {
+    "parent": "Asset",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "Asset",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Quality Manager"
+   },
+   {
+    "parent": "Asset",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   }
+  ]
+ },
+ {
+  "add_total_row": 1,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [
+   {
+    "fieldname": "company",
+    "fieldtype": "Link",
+    "label": "Company",
+    "mandatory": 1,
+    "options": "Company",
+    "parent": "Asset Category",
+    "parentfield": "filters",
+    "parenttype": "Report",
+    "wildcard_filter": 0
+   },
+   {
+    "fieldname": "physical_year",
+    "fieldtype": "Link",
+    "label": "Fiscal Year",
+    "mandatory": 1,
+    "options": "Fiscal Year",
+    "parent": "Asset Category",
+    "parentfield": "filters",
+    "parenttype": "Report",
+    "wildcard_filter": 0
+   }
+  ],
+  "is_standard": "No",
+  "javascript": null,
+  "json": null,
+  "letter_head": null,
+  "modified": "2023-01-02 16:01:45.988607",
+  "module": "Assets",
+  "name": "Asset Category",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": "SELECT\n    SS.company                  \"Company:Data:200\",\n    SS.name                     \"Asset Number:Link/Asset:200\",\n    SS.asset_name               \"Asset Name:Data:200\",\n    SS.status                   \"Status:Data:200\",\n    SS.location                 \"Location:Data:200\",\n    SS.asset_category           \"Asset Category:Link/Asset Category:200\",\n    SS.purchase_date            \"Purchase Date:Date:150\",\n    SS.available_for_use_date   \"Available For Use Date:Date:150\",\n    SUM(SS.gross_purchase_amount)    \"Gross Purchase:Currency:150\",\n    SUM(SS.opening_accumulated_depreciation)  \"Opening Accumulated Depreciation:Currency\",\n    SUM((\n        SELECT \n            SUM(DS.depreciation_amount)\n        FROM\n            `tabDepreciation Schedule` AS DS\n        WHERE\n            DS.journal_entry IS NOT NULL\n        AND\n            DS.schedule_date like CONCAT(%(physical_year)s ,'-%%-%%')\n        AND\n            DS.parent = SS.name\n    ))   \"Depreciation Amount:Currency\",\n    MAX(DS.accumulated_depreciation_amount) \"Closing Accumulated Depreciation:Currency:200\",\n    (SUM(SS.gross_purchase_amount) - MAX(DS.accumulated_depreciation_amount)) \"Net Book Value:Currency:200\"\nFROM\n    `tabAsset` AS SS\nJOIN \n    `tabDepreciation Schedule` AS DS\nON \n    SS.name = DS.parent\nWHERE \n    SS.docstatus = 1\nAND\n    DS.journal_entry IS NOT NULL\nAND\n    SS.company = %(company)s\nGroup By\n    SS.asset_category;",
+  "ref_doctype": "Asset",
+  "reference_report": null,
+  "report_name": "Asset Category",
+  "report_script": null,
+  "report_type": "Query Report",
+  "roles": [
+   {
+    "parent": "Asset Category",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "Asset Category",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Quality Manager"
+   },
+   {
+    "parent": "Asset Category",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": null,
+  "letter_head": null,
+  "modified": "2023-03-27 14:49:34.803414",
+  "module": "HR",
+  "name": "Att Test",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": "select\n    EC.name,\n    EC.employee,\n    EC.time,\n    E.date_of_joining\nfrom\n    `tabEmployee Checkin` EC, `tabEmployee` E\nwhere\n    EC.employee = E.name and\n    E.date_of_joining > EC.time\n    ",
+  "ref_doctype": "Employee Checkin",
+  "reference_report": null,
+  "report_name": "Att Test",
+  "report_script": null,
+  "report_type": "Query Report",
+  "roles": [
+   {
+    "parent": "Att Test",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "System Manager"
+   },
+   {
+    "parent": "Att Test",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "HR Manager"
+   },
+   {
+    "parent": "Att Test",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "HR User"
+   },
+   {
+    "parent": "Att Test",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Employee"
+   }
+  ]
+ },
+ {
+  "add_total_row": 1,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": null,
+  "letter_head": null,
+  "modified": "2023-04-05 00:00:02.419138",
+  "module": "Accounts",
+  "name": "Bank Balance",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": "Select\r\n\tGLE.account\t\t\t\t\t\t\t\t\t\"Account:Link/Account:300\"\r\n,\tsum(GLE.debit)\t\t\t\t\t\t\t\t\t\"Debit:Currency:150\"\r\n,\tsum(GLE.credit)\t\t\t\t\t\t\t\t\t\"Credit:Currency:150\"\r\n,\t(sum(GLE.debit)-sum(GLE.credit))\t\t\t\t\t\t\"Balance EGP:Currency:150\"\t\r\n\r\n\t\r\n\r\nfrom\r\n\r\n\t`tabGL Entry` \tAS GLE\r\nJoin\t`tabAccount`\tAS ACC\r\nOn \tACC.name = GLE.account\r\n\r\nwhere\r\n        GLE.account in (\"1262211 - \u0628\u0646\u0643 \u0642\u0637\u0631 \u0627\u0644\u0648\u0637\u0646\u064990-203319088825-107 - ASR\",\r\n    \"1262212 - \u0628\u0646\u0643 \u0642\u0637\u0631 \u0627\u0644\u0648\u0637\u0646\u064914-203319088818-107 - ASR\",\r\n    \"1262221 - \u0627\u0644\u0628\u0646\u0643 \u0627\u0644\u0645\u0635\u0631\u0649 \u0627\u0644\u062e\u0644\u064a\u062c\u0649 001-608990-0048 - ASR\",\r\n    \"1262222 - \u0627\u0644\u0628\u0646\u0643 \u0627\u0644\u0645\u0635\u0631\u0649 \u0627\u0644\u062e\u0644\u064a\u062c\u0649 008-608990-0048 - ASR\",\r\n    \"1262231 - \u0627\u0644\u0628\u0646\u0643 \u0627\u0644\u062a\u062c\u0627\u0631\u0649 \u0627\u0644\u062f\u0648\u0644\u0649CIB \u062d\u0640\u2018/100050051778 - ASR\",\r\n    \"1262241 - \u0627\u0644\u0628\u0646\u0643 \u0627\u0644\u0627\u0647\u0644\u0649 \u0627\u0644\u0645\u0635\u0631\u0649 \u0631\u0642\u0645 1163171466623403030\u062d\u0633\u0627\u0628 \u062a\u0645\u0648\u064a\u0644 - ASR\",\r\n    \"1262242 - \u0627\u0644\u0628\u0646\u0643 \u0627\u0644\u0622\u0647\u0644\u0649 \u0627\u0644\u0645\u0635\u0631\u0649 \u0631\u0642\u0645 1163171466623404044\u062d\u0633\u0627\u0628 \u062a\u0645\u0648\u064a\u0644 - ASR\",\r\n    \"126231 - \u0628\u0646\u0643 \u0642\u0637\u0631 \u0627\u0644\u0648\u0637\u0646\u0649 \u062f\u0648\u0644\u0627\u063129-USD20319481760 - ASR\",\r\n    \"126232 - \u0627\u0644\u0628\u0646\u0643 \u0627\u0644\u0645\u0635\u0631\u0649 \u0627\u0644\u062e\u0644\u064a\u062c\u0649 \u062f\u0648\u0644\u0627\u0631-608990-0048 - ASR\",\r\n    \"126241 - \u0628\u0646\u0643 \u0642\u0637\u0631 \u0627\u0644\u0648\u0637\u0646\u064915-203113711618-107\u064a\u0648\u0631\u0648 - ASR\")\r\nGroup BY account\r\nHAVING \t(sum(GLE.debit_in_account_currency)-sum(GLE.credit_in_account_currency)) <> 0 and \r\n\t(sum(GLE.debit)-sum(GLE.credit)) <> 0\r\n;",
+  "ref_doctype": "GL Entry",
+  "reference_report": null,
+  "report_name": "Bank Balance",
+  "report_script": null,
+  "report_type": "Query Report",
+  "roles": [
+   {
+    "parent": "Bank Balance",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "Bank Balance",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "Bank Balance",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "add_total_row": 1,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": null,
+  "letter_head": null,
+  "modified": "2023-04-05 00:00:57.510341",
+  "module": "Accounts",
+  "name": "Cash Balance",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": "Select\r\n\tGLE.account\t\t\t\t\t\t\t\t\t\"Account:Link/Account:300\"\r\n,\tsum(GLE.debit)\t\t\t\t\t\t\t\t\t\"Debit:Currency:150\"\r\n,\tsum(GLE.credit)\t\t\t\t\t\t\t\t\t\"Credit:Currency:150\"\r\n,\t(sum(GLE.debit)-sum(GLE.credit))\t\t\t\t\t\t\"Balance EGP:Currency:150\"\t\r\n\r\n\t\r\n\r\nfrom\r\n\r\n\t`tabGL Entry` \tAS GLE\r\nJoin\t`tabAccount`\tAS ACC\r\nOn \tACC.name = GLE.account\r\n\r\nwhere\r\n        GLE.account = \"12611 - \u062e\u0632\u064a\u0646\u0629 \u062c\u0646\u064a\u0629 \u0645\u0635\u0631\u0649 - ASR\"\r\nGroup BY account\r\nHAVING \t(sum(GLE.debit_in_account_currency)-sum(GLE.credit_in_account_currency)) <> 0 and \r\n\t(sum(GLE.debit)-sum(GLE.credit)) <> 0\r\n;",
+  "ref_doctype": "GL Entry",
+  "reference_report": null,
+  "report_name": "Cash Balance",
+  "report_script": null,
+  "report_type": "Query Report",
+  "roles": [
+   {
+    "parent": "Cash Balance",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "Cash Balance",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "Cash Balance",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "add_total_row": 1,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": null,
+  "letter_head": null,
+  "modified": "2023-12-05 21:37:51.170868",
+  "module": "Accounts",
+  "name": "Treasury checks",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": "Select\r\n\tGLE.account\t\t\t\t\t\t\t\t\t\"Account:Link/Account:300\"\r\n,\tsum(GLE.debit)\t\t\t\t\t\t\t\t\t\"Debit:Currency:150\"\r\n,\tsum(GLE.credit)\t\t\t\t\t\t\t\t\t\"Credit:Currency:150\"\r\n,\t(sum(GLE.debit)-sum(GLE.credit))\t\t\t\t\t\t\"Balance EGP:Currency:150\"\t\r\n\r\n\t\r\n\r\nfrom\r\n\r\n\t`tabGL Entry` \tAS GLE\r\nJoin\t`tabAccount`\tAS ACC\r\nOn \tACC.name = GLE.account\r\n\r\nwhere\r\n        GLE.account = \"123211 - \u0623\u0648\u0631\u0627\u0642 \u0642\u0628\u0636 \u0639\u0642\u0648\u062f-\u0627\u0644\u062e\u0632\u064a\u0646\u0629 - ASR\"\r\nGroup BY account\r\nHAVING \t(sum(GLE.debit_in_account_currency)-sum(GLE.credit_in_account_currency)) <> 0 and \r\n\t(sum(GLE.debit)-sum(GLE.credit)) <> 0\r\n;",
+  "ref_doctype": "GL Entry",
+  "reference_report": null,
+  "report_name": "Treasury checks",
+  "report_script": null,
+  "report_type": "Query Report",
+  "roles": [
+   {
+    "parent": "Treasury checks",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "Treasury checks",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "Treasury checks",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": "{\"filters\":[[\"Purchase Order\",\"company\",\"=\",\"Al Salem Realestate\"]],\"fields\":[[\"workflow_state\",\"Purchase Order\"],[\"name\",\"Purchase Order\"],[\"docstatus\",\"Purchase Order\"],[\"supplier_name\",\"Purchase Order\"],[\"supplier\",\"Purchase Order\"],[\"company\",\"Purchase Order\"],[\"transaction_date\",\"Purchase Order\"],[\"is_subcontracted\",\"Purchase Order\"],[\"grand_total\",\"Purchase Order\"],[\"status\",\"Purchase Order\"],[\"per_billed\",\"Purchase Order\"],[\"per_received\",\"Purchase Order\"],[\"currency\",\"Purchase Order\"],[\"base_grand_total\",\"Purchase Order\"]],\"order_by\":\"`tabPurchase Order`.`modified` desc\",\"add_totals_row\":0,\"page_length\":500,\"column_widths\":{\"workflow_state\":120,\"name\":120,\"supplier_name\":120,\"supplier\":120,\"company\":120,\"transaction_date\":120,\"is_subcontracted\":120,\"grand_total\":120,\"status\":120,\"per_billed\":120,\"per_received\":120,\"currency\":120,\"base_grand_total\":120},\"group_by\":null}",
+  "letter_head": "AlSalem",
+  "modified": "2023-12-18 15:52:51.716468",
+  "module": "Buying",
+  "name": "PO REPORT",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Purchase Order",
+  "reference_report": null,
+  "report_name": "PO REPORT",
+  "report_script": null,
+  "report_type": "Report Builder",
+  "roles": [
+   {
+    "parent": "PO REPORT",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase Manager"
+   },
+   {
+    "parent": "PO REPORT",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   },
+   {
+    "parent": "PO REPORT",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "PO REPORT",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Admin"
+   },
+   {
+    "parent": "PO REPORT",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "President"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": "{\"filters\":[[\"Purchase Order\",\"company\",\"=\",\"Al Salem Realestate\"]],\"fields\":[[\"name\",\"Purchase Order\"],[\"supplier_name\",\"Purchase Order\"],[\"supplier\",\"Purchase Order\"],[\"company\",\"Purchase Order\"],[\"transaction_date\",\"Purchase Order\"],[\"is_subcontracted\",\"Purchase Order\"],[\"grand_total\",\"Purchase Order\"],[\"status\",\"Purchase Order\"],[\"per_billed\",\"Purchase Order\"],[\"per_received\",\"Purchase Order\"],[\"currency\",\"Purchase Order\"],[\"base_grand_total\",\"Purchase Order\"]],\"order_by\":\"`tabPurchase Order`.`modified` desc\",\"add_totals_row\":0,\"page_length\":20,\"column_widths\":{\"name\":120,\"supplier_name\":120,\"supplier\":120,\"company\":120,\"transaction_date\":120,\"is_subcontracted\":120,\"grand_total\":120,\"status\":120,\"per_billed\":120,\"per_received\":120,\"currency\":120,\"base_grand_total\":120},\"group_by\":null}",
+  "letter_head": "AlSalem",
+  "modified": "2023-12-18 16:10:52.242321",
+  "module": "Buying",
+  "name": "save",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Purchase Order",
+  "reference_report": null,
+  "report_name": "save",
+  "report_script": null,
+  "report_type": "Report Builder",
+  "roles": [
+   {
+    "parent": "save",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase Manager"
+   },
+   {
+    "parent": "save",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   },
+   {
+    "parent": "save",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "save",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Admin"
+   },
+   {
+    "parent": "save",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "President"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": "{\"filters\":[[\"Purchase Order\",\"status\",\"!=\",\"Cancelled\",false],[\"Purchase Order\",\"status\",\"!=\",\"Draft\",false],[\"Purchase Order\",\"company\",\"=\",\"Al Salem Realestate\"]],\"fields\":[[\"name\",\"Purchase Order\"],[\"supplier_name\",\"Purchase Order\"],[\"item_code\",\"Purchase Order Item\"],[\"item_name\",\"Purchase Order Item\"],[\"qty\",\"Purchase Order Item\"],[\"rate\",\"Purchase Order Item\"],[\"amount\",\"Purchase Order Item\"],[\"per_billed\",\"Purchase Order\"],[\"per_received\",\"Purchase Order\"],[\"transaction_date\",\"Purchase Order\"],[\"company\",\"Purchase Order\"]],\"order_by\":\"`tabPurchase Order`.`modified` desc\",\"add_totals_row\":true,\"page_length\":500,\"column_widths\":{\"name\":172,\"supplier_name\":145,\"Purchase Order Item:item_code\":120,\"Purchase Order Item:item_name\":120,\"Purchase Order Item:qty\":76,\"Purchase Order Item:rate\":120,\"Purchase Order Item:amount\":120,\"per_billed\":120,\"per_received\":120,\"transaction_date\":120,\"company\":120},\"group_by\":null}",
+  "letter_head": "AlSalem",
+  "modified": "2024-02-03 23:17:25.252787",
+  "module": "Buying",
+  "name": "Report Purchase Order",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Purchase Order",
+  "reference_report": null,
+  "report_name": "Report Purchase Order",
+  "report_script": null,
+  "report_type": "Report Builder",
+  "roles": [
+   {
+    "parent": "Report Purchase Order",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase Manager"
+   },
+   {
+    "parent": "Report Purchase Order",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   },
+   {
+    "parent": "Report Purchase Order",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "Report Purchase Order",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Admin"
+   },
+   {
+    "parent": "Report Purchase Order",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "President"
+   }
+  ]
+ },
+ {
+  "add_total_row": 1,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": "{\"columns\":[{\"label\":\"Date\",\"fieldname\":\"date\",\"fieldtype\":\"Date\",\"width\":90,\"id\":\"date\",\"name\":\"Date\",\"editable\":false},{\"label\":\"Required By\",\"fieldname\":\"required_date\",\"fieldtype\":\"Date\",\"width\":90,\"id\":\"required_date\",\"name\":\"Required By\",\"editable\":false},{\"label\":\"Purchase Order\",\"fieldname\":\"purchase_order\",\"fieldtype\":\"Link\",\"options\":\"Purchase Order\",\"width\":160,\"id\":\"purchase_order\",\"name\":\"Purchase Order\",\"editable\":false,\"compareValue\":null},{\"label\":\"Status\",\"fieldname\":\"status\",\"fieldtype\":\"Data\",\"width\":130,\"id\":\"status\",\"name\":\"Status\",\"editable\":false,\"compareValue\":null},{\"label\":\"Supplier\",\"fieldname\":\"supplier\",\"fieldtype\":\"Link\",\"options\":\"Supplier\",\"width\":130,\"id\":\"supplier\",\"name\":\"Supplier\",\"editable\":false,\"compareValue\":null},{\"label\":\"Project\",\"fieldname\":\"project\",\"fieldtype\":\"Link\",\"options\":\"Project\",\"width\":130,\"id\":\"project\",\"name\":\"Project\",\"editable\":false,\"compareValue\":null},{\"label\":\"Item Code\",\"fieldname\":\"item_code\",\"fieldtype\":\"Link\",\"options\":\"Item\",\"width\":100,\"id\":\"item_code\",\"name\":\"Item Code\",\"editable\":false,\"compareValue\":null},{\"fieldname\":\"item_group\",\"field\":\"item_group\",\"fieldtype\":\"Link\",\"label\":\"Item Group\",\"insert_after_index\":6,\"link_field\":\"item_code\",\"doctype\":\"Item\",\"options\":\"Item Group\",\"width\":100,\"id\":\"item_group\",\"name\":\"Item Group\",\"editable\":false,\"compareValue\":null},{\"label\":\"Qty\",\"fieldname\":\"qty\",\"fieldtype\":\"Float\",\"width\":120,\"convertible\":\"qty\",\"id\":\"qty\",\"name\":\"Qty\",\"editable\":false,\"compareValue\":null},{\"label\":\"Received Qty\",\"fieldname\":\"received_qty\",\"fieldtype\":\"Float\",\"width\":120,\"convertible\":\"qty\",\"id\":\"received_qty\",\"name\":\"Received Qty\",\"editable\":false,\"compareValue\":null},{\"label\":\"Pending Qty\",\"fieldname\":\"pending_qty\",\"fieldtype\":\"Float\",\"width\":80,\"convertible\":\"qty\",\"id\":\"pending_qty\",\"name\":\"Pending Qty\",\"editable\":false,\"compareValue\":null},{\"label\":\"Billed Qty\",\"fieldname\":\"billed_qty\",\"fieldtype\":\"Float\",\"width\":80,\"convertible\":\"qty\",\"id\":\"billed_qty\",\"name\":\"Billed Qty\",\"editable\":false,\"compareValue\":null},{\"label\":\"Qty to Bill\",\"fieldname\":\"qty_to_bill\",\"fieldtype\":\"Float\",\"width\":80,\"convertible\":\"qty\",\"id\":\"qty_to_bill\",\"name\":\"Qty to Bill\",\"editable\":false,\"compareValue\":null},{\"label\":\"Amount\",\"fieldname\":\"amount\",\"fieldtype\":\"Currency\",\"width\":110,\"options\":\"Company:company:default_currency\",\"convertible\":\"rate\",\"id\":\"amount\",\"name\":\"Amount\",\"editable\":false,\"compareValue\":null},{\"label\":\"Billed Amount\",\"fieldname\":\"billed_amount\",\"fieldtype\":\"Currency\",\"width\":110,\"options\":\"Company:company:default_currency\",\"convertible\":\"rate\",\"id\":\"billed_amount\",\"name\":\"Billed Amount\",\"editable\":false,\"compareValue\":null},{\"label\":\"Pending Amount\",\"fieldname\":\"pending_amount\",\"fieldtype\":\"Currency\",\"width\":130,\"options\":\"Company:company:default_currency\",\"convertible\":\"rate\",\"id\":\"pending_amount\",\"name\":\"Pending Amount\",\"editable\":false,\"compareValue\":null},{\"label\":\"Received Qty Amount\",\"fieldname\":\"received_qty_amount\",\"fieldtype\":\"Currency\",\"width\":130,\"options\":\"Company:company:default_currency\",\"convertible\":\"rate\",\"id\":\"received_qty_amount\",\"name\":\"Received Qty Amount\",\"editable\":false,\"compareValue\":null},{\"label\":\"Warehouse\",\"fieldname\":\"warehouse\",\"fieldtype\":\"Link\",\"options\":\"Warehouse\",\"width\":100,\"id\":\"warehouse\",\"name\":\"Warehouse\",\"editable\":false,\"compareValue\":null},{\"label\":\"Company\",\"fieldname\":\"company\",\"fieldtype\":\"Link\",\"options\":\"Company\",\"width\":100,\"id\":\"company\",\"name\":\"Company\",\"editable\":false,\"compareValue\":null}]}",
+  "letter_head": "AlSalem",
+  "modified": "2024-02-07 11:50:26.728315",
+  "module": "Buying",
+  "name": "Purchase Order Analysis Report",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Purchase Order",
+  "reference_report": "Purchase Order Analysis",
+  "report_name": "Purchase Order Analysis Report",
+  "report_script": null,
+  "report_type": "Custom Report",
+  "roles": [
+   {
+    "parent": "Purchase Order Analysis Report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase Manager"
+   },
+   {
+    "parent": "Purchase Order Analysis Report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   },
+   {
+    "parent": "Purchase Order Analysis Report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "Purchase Order Analysis Report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Admin"
+   },
+   {
+    "parent": "Purchase Order Analysis Report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "President"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": "{\"filters\":[[\"Purchase Order\",\"supplier\",\"=\",\"\u0634\u0631\u0643\u0629 \u0627\u0644\u0646\u0647\u0636\u0629 \u0644\u0644\u062a\u062c\u0627\u0631\u0629 \u0648 \u0627\u0644\u0647\u0646\u062f\u0633\u0629\"],[\"Purchase Order\",\"company\",\"=\",\"Al Salem Realestate\"]],\"fields\":[[\"workflow_state\",\"Purchase Order\"],[\"name\",\"Purchase Order\"],[\"docstatus\",\"Purchase Order\"],[\"supplier_name\",\"Purchase Order\"],[\"supplier\",\"Purchase Order\"],[\"company\",\"Purchase Order\"],[\"transaction_date\",\"Purchase Order\"],[\"is_subcontracted\",\"Purchase Order\"],[\"grand_total\",\"Purchase Order\"],[\"status\",\"Purchase Order\"],[\"per_billed\",\"Purchase Order\"],[\"per_received\",\"Purchase Order\"],[\"currency\",\"Purchase Order\"],[\"base_grand_total\",\"Purchase Order\"]],\"order_by\":\"`tabPurchase Order`.`modified` desc\",\"add_totals_row\":0,\"page_length\":500,\"column_widths\":{\"workflow_state\":120,\"name\":120,\"supplier_name\":120,\"supplier\":120,\"company\":120,\"transaction_date\":120,\"is_subcontracted\":120,\"grand_total\":120,\"status\":120,\"per_billed\":120,\"per_received\":120,\"currency\":120,\"base_grand_total\":120},\"group_by\":null}",
+  "letter_head": "AlSalem",
+  "modified": "2024-02-11 18:22:12.572803",
+  "module": "Buying",
+  "name": "IT",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Purchase Order",
+  "reference_report": null,
+  "report_name": "IT",
+  "report_script": null,
+  "report_type": "Report Builder",
+  "roles": [
+   {
+    "parent": "IT",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase Manager"
+   },
+   {
+    "parent": "IT",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   },
+   {
+    "parent": "IT",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "IT",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Admin"
+   },
+   {
+    "parent": "IT",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "President"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": "{\"filters\":[[\"Material Request\",\"docstatus\",\"=\",\"1\",false],[\"Material Request\",\"transaction_date\",\"Timespan\",\"this year\",false],[\"Material Request\",\"status\",\"=\",\"Pending\"]],\"fields\":[[\"workflow_state\",\"Material Request\"],[\"name\",\"Material Request\"],[\"docstatus\",\"Material Request\"],[\"material_request_type\",\"Material Request\"],[\"schedule_date\",\"Material Request\"],[\"company\",\"Material Request\"],[\"department\",\"Material Request\"],[\"set_warehouse\",\"Material Request\"],[\"per_ordered\",\"Material Request\"],[\"per_received\",\"Material Request\"],[\"transfer_status\",\"Material Request\"],[\"manager\",\"Material Request\"]],\"order_by\":\"`tabMaterial Request`.`modified` desc\",\"add_totals_row\":0,\"page_length\":100,\"column_widths\":{\"workflow_state\":209,\"name\":161,\"material_request_type\":120,\"schedule_date\":120,\"company\":157,\"department\":139,\"set_warehouse\":120,\"per_ordered\":120,\"per_received\":120,\"transfer_status\":120,\"manager\":120},\"group_by\":null}",
+  "letter_head": "AlSalem",
+  "modified": "2024-02-24 20:36:47.078716",
+  "module": "Stock",
+  "name": "Pending requests",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Material Request",
+  "reference_report": null,
+  "report_name": "Pending requests",
+  "report_script": null,
+  "report_type": "Report Builder",
+  "roles": [
+   {
+    "parent": "Pending requests",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock Manager"
+   },
+   {
+    "parent": "Pending requests",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   },
+   {
+    "parent": "Pending requests",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Direct Manager"
+   },
+   {
+    "parent": "Pending requests",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Employee"
+   },
+   {
+    "parent": "Pending requests",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "System Manager"
+   },
+   {
+    "parent": "Pending requests",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Requster"
+   },
+   {
+    "parent": "Pending requests",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Admin"
+   },
+   {
+    "parent": "Pending requests",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "President"
+   },
+   {
+    "parent": "Pending requests",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "operation manager"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": "{\"filters\":[[\"Material Request\",\"owner\",\"=\",\"mwahib@alsalemholding.com\",false],[\"Material Request\",\"company\",\"=\",\"Al Salem Realestate\"]],\"fields\":[[\"workflow_state\",\"Material Request\"],[\"name\",\"Material Request\"],[\"docstatus\",\"Material Request\"],[\"title\",\"Material Request\"],[\"material_request_type\",\"Material Request\"],[\"status\",\"Material Request\"],[\"schedule_date\",\"Material Request\"],[\"company\",\"Material Request\"],[\"department\",\"Material Request\"],[\"set_warehouse\",\"Material Request\"],[\"per_ordered\",\"Material Request\"],[\"per_received\",\"Material Request\"],[\"transfer_status\",\"Material Request\"]],\"order_by\":\"`tabMaterial Request`.`modified` desc\",\"add_totals_row\":0,\"page_length\":20,\"column_widths\":{\"workflow_state\":120,\"name\":120,\"title\":120,\"material_request_type\":120,\"status\":100,\"schedule_date\":120,\"company\":150,\"department\":120,\"set_warehouse\":120,\"per_ordered\":120,\"per_received\":120,\"transfer_status\":120},\"group_by\":null}",
+  "letter_head": "AlSalem",
+  "modified": "2024-02-29 16:38:55.200936",
+  "module": "Stock",
+  "name": "IT REQUESTS",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Material Request",
+  "reference_report": null,
+  "report_name": "IT REQUESTS",
+  "report_script": null,
+  "report_type": "Report Builder",
+  "roles": [
+   {
+    "parent": "IT REQUESTS",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock Manager"
+   },
+   {
+    "parent": "IT REQUESTS",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   },
+   {
+    "parent": "IT REQUESTS",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Direct Manager"
+   },
+   {
+    "parent": "IT REQUESTS",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Employee"
+   },
+   {
+    "parent": "IT REQUESTS",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "System Manager"
+   },
+   {
+    "parent": "IT REQUESTS",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Requster"
+   },
+   {
+    "parent": "IT REQUESTS",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Admin"
+   },
+   {
+    "parent": "IT REQUESTS",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "President"
+   },
+   {
+    "parent": "IT REQUESTS",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "operation manager"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": "{\"filters\":[[\"Material Request\",\"status\",\"=\",\"Pending\"],[\"Material Request\",\"company\",\"=\",\"Al Salem Realestate\"]],\"fields\":[[\"workflow_state\",\"Material Request\"],[\"name\",\"Material Request\"],[\"docstatus\",\"Material Request\"],[\"material_request_type\",\"Material Request\"],[\"schedule_date\",\"Material Request\"],[\"company\",\"Material Request\"],[\"department\",\"Material Request\"],[\"set_warehouse\",\"Material Request\"],[\"per_ordered\",\"Material Request\"],[\"per_received\",\"Material Request\"],[\"transfer_status\",\"Material Request\"],[\"manager\",\"Material Request\"]],\"order_by\":\"`tabMaterial Request`.`modified` desc\",\"add_totals_row\":0,\"page_length\":100,\"column_widths\":{\"workflow_state\":209,\"name\":161,\"material_request_type\":120,\"schedule_date\":120,\"company\":157,\"department\":139,\"set_warehouse\":120,\"per_ordered\":120,\"per_received\":120,\"transfer_status\":120,\"manager\":120},\"group_by\":null}",
+  "letter_head": "AlSalem",
+  "modified": "2024-03-04 11:03:39.251145",
+  "module": "Stock",
+  "name": "A",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Material Request",
+  "reference_report": null,
+  "report_name": "A",
+  "report_script": null,
+  "report_type": "Report Builder",
+  "roles": [
+   {
+    "parent": "A",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock Manager"
+   },
+   {
+    "parent": "A",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   },
+   {
+    "parent": "A",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Direct Manager"
+   },
+   {
+    "parent": "A",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Employee"
+   },
+   {
+    "parent": "A",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "System Manager"
+   },
+   {
+    "parent": "A",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Requster"
+   },
+   {
+    "parent": "A",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Admin"
+   },
+   {
+    "parent": "A",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "President"
+   },
+   {
+    "parent": "A",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "operation manager"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": "{\"filters\":[[\"Material Request\",\"transaction_date\",\"Timespan\",\"this quarter\",false],[\"Material Request\",\"material_request_type\",\"=\",\"Purchase\"],[\"Material Request\",\"status\",\"=\",\"Pending\"],[\"Material Request\",\"company\",\"=\",\"Al Salem Realestate\"]],\"fields\":[[\"workflow_state\",\"Material Request\"],[\"name\",\"Material Request\"],[\"docstatus\",\"Material Request\"],[\"material_request_type\",\"Material Request\"],[\"schedule_date\",\"Material Request\"],[\"company\",\"Material Request\"],[\"department\",\"Material Request\"],[\"set_warehouse\",\"Material Request\"],[\"per_ordered\",\"Material Request\"],[\"per_received\",\"Material Request\"],[\"transfer_status\",\"Material Request\"],[\"manager\",\"Material Request\"]],\"order_by\":\"`tabMaterial Request`.`modified` desc\",\"add_totals_row\":0,\"page_length\":100,\"column_widths\":{\"workflow_state\":209,\"name\":161,\"material_request_type\":120,\"schedule_date\":120,\"company\":157,\"department\":139,\"set_warehouse\":120,\"per_ordered\":120,\"per_received\":120,\"transfer_status\":120,\"manager\":120},\"group_by\":null}",
+  "letter_head": "AlSalem",
+  "modified": "2024-03-04 12:52:22.189125",
+  "module": "Stock",
+  "name": "Pending",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Material Request",
+  "reference_report": null,
+  "report_name": "Pending",
+  "report_script": null,
+  "report_type": "Report Builder",
+  "roles": [
+   {
+    "parent": "Pending",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock Manager"
+   },
+   {
+    "parent": "Pending",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   },
+   {
+    "parent": "Pending",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Direct Manager"
+   },
+   {
+    "parent": "Pending",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Employee"
+   },
+   {
+    "parent": "Pending",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "System Manager"
+   },
+   {
+    "parent": "Pending",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Requster"
+   },
+   {
+    "parent": "Pending",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Admin"
+   },
+   {
+    "parent": "Pending",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "President"
+   },
+   {
+    "parent": "Pending",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "operation manager"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": "{\"filters\":[[\"Material Request\",\"transaction_date\",\"Timespan\",\"this quarter\",false],[\"Material Request\",\"material_request_type\",\"=\",\"Purchase\"],[\"Material Request\",\"status\",\"=\",\"Pending\"],[\"Material Request\",\"company\",\"=\",\"Al Salem Realestate\"]],\"fields\":[[\"workflow_state\",\"Material Request\"],[\"name\",\"Material Request\"],[\"docstatus\",\"Material Request\"],[\"title\",\"Material Request\"],[\"material_request_type\",\"Material Request\"],[\"status\",\"Material Request\"],[\"schedule_date\",\"Material Request\"],[\"company\",\"Material Request\"],[\"set_warehouse\",\"Material Request\"],[\"per_ordered\",\"Material Request\"],[\"per_received\",\"Material Request\"],[\"transfer_status\",\"Material Request\"]],\"order_by\":\"`tabMaterial Request`.`modified` desc\",\"add_totals_row\":0,\"page_length\":20,\"column_widths\":{\"workflow_state\":120,\"name\":120,\"title\":120,\"material_request_type\":120,\"status\":100,\"schedule_date\":120,\"company\":150,\"set_warehouse\":120,\"per_ordered\":120,\"per_received\":120,\"transfer_status\":120},\"group_by\":null}",
+  "letter_head": "AlSalem",
+  "modified": "2024-03-05 11:42:15.203617",
+  "module": "Stock",
+  "name": "report",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Material Request",
+  "reference_report": null,
+  "report_name": "report",
+  "report_script": null,
+  "report_type": "Report Builder",
+  "roles": [
+   {
+    "parent": "report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock Manager"
+   },
+   {
+    "parent": "report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   },
+   {
+    "parent": "report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Direct Manager"
+   },
+   {
+    "parent": "report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Employee"
+   },
+   {
+    "parent": "report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "System Manager"
+   },
+   {
+    "parent": "report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Requster"
+   },
+   {
+    "parent": "report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Admin"
+   },
+   {
+    "parent": "report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "President"
+   },
+   {
+    "parent": "report",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "operation manager"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": "{\"filters\":[[\"Material Request\",\"transaction_date\",\"Timespan\",\"this quarter\",false],[\"Material Request\",\"material_request_type\",\"=\",\"Purchase\"],[\"Material Request\",\"status\",\"=\",\"Pending\"],[\"Material Request\",\"company\",\"=\",\"Al Salem Realestate\"]],\"fields\":[[\"workflow_state\",\"Material Request\"],[\"name\",\"Material Request\"],[\"docstatus\",\"Material Request\"],[\"material_request_type\",\"Material Request\"],[\"schedule_date\",\"Material Request\"],[\"company\",\"Material Request\"],[\"department\",\"Material Request\"],[\"set_warehouse\",\"Material Request\"],[\"per_ordered\",\"Material Request\"],[\"per_received\",\"Material Request\"],[\"transfer_status\",\"Material Request\"],[\"manager\",\"Material Request\"]],\"order_by\":\"`tabMaterial Request`.`modified` desc\",\"add_totals_row\":0,\"page_length\":100,\"column_widths\":{\"workflow_state\":209,\"name\":161,\"material_request_type\":120,\"schedule_date\":120,\"company\":157,\"department\":139,\"set_warehouse\":120,\"per_ordered\":120,\"per_received\":120,\"transfer_status\":120,\"manager\":120},\"group_by\":null}",
+  "letter_head": "AlSalem",
+  "modified": "2024-03-05 11:58:49.524380",
+  "module": "Stock",
+  "name": "?",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Material Request",
+  "reference_report": null,
+  "report_name": "?",
+  "report_script": null,
+  "report_type": "Report Builder",
+  "roles": [
+   {
+    "parent": "?",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock Manager"
+   },
+   {
+    "parent": "?",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   },
+   {
+    "parent": "?",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Direct Manager"
+   },
+   {
+    "parent": "?",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Employee"
+   },
+   {
+    "parent": "?",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "System Manager"
+   },
+   {
+    "parent": "?",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Requster"
+   },
+   {
+    "parent": "?",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Admin"
+   },
+   {
+    "parent": "?",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "President"
+   },
+   {
+    "parent": "?",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "operation manager"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": "{\"filters\":[[\"Material Request\",\"material_request_type\",\"=\",\"Purchase\"],[\"Material Request\",\"status\",\"=\",\"Ordered\"],[\"Material Request\",\"company\",\"=\",\"Al Salem Realestate\"]],\"fields\":[[\"workflow_state\",\"Material Request\"],[\"name\",\"Material Request\"],[\"docstatus\",\"Material Request\"],[\"title\",\"Material Request\"],[\"material_request_type\",\"Material Request\"],[\"status\",\"Material Request\"],[\"schedule_date\",\"Material Request\"],[\"company\",\"Material Request\"],[\"set_warehouse\",\"Material Request\"],[\"per_ordered\",\"Material Request\"],[\"per_received\",\"Material Request\"],[\"transfer_status\",\"Material Request\"]],\"order_by\":\"`tabMaterial Request`.`modified` desc\",\"add_totals_row\":0,\"page_length\":20,\"column_widths\":{\"workflow_state\":120,\"name\":120,\"title\":120,\"material_request_type\":120,\"status\":100,\"schedule_date\":120,\"company\":150,\"set_warehouse\":120,\"per_ordered\":120,\"per_received\":120,\"transfer_status\":120},\"group_by\":null}",
+  "letter_head": "AlSalem",
+  "modified": "2024-03-05 16:23:31.632312",
+  "module": "Stock",
+  "name": "R",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Material Request",
+  "reference_report": null,
+  "report_name": "R",
+  "report_script": null,
+  "report_type": "Report Builder",
+  "roles": [
+   {
+    "parent": "R",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock Manager"
+   },
+   {
+    "parent": "R",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   },
+   {
+    "parent": "R",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Direct Manager"
+   },
+   {
+    "parent": "R",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "System Manager"
+   },
+   {
+    "parent": "R",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Requster"
+   },
+   {
+    "parent": "R",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Admin"
+   },
+   {
+    "parent": "R",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "President"
+   },
+   {
+    "parent": "R",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "operation manager"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": "{\"filters\":[[\"Stock Entry\",\"workflow_state\",\"=\",\"create By Stock User\",false],[\"Stock Entry\",\"posting_date\",\"Timespan\",\"this year\",false],[\"Stock Entry\",\"stock_entry_type\",\"=\",\"Material Issue\"]],\"fields\":[[\"workflow_state\",\"Stock Entry\"],[\"name\",\"Stock Entry\"],[\"docstatus\",\"Stock Entry\"],[\"stock_entry_type\",\"Stock Entry\"],[\"purpose\",\"Stock Entry\"],[\"from_warehouse\",\"Stock Entry\"],[\"to_warehouse\",\"Stock Entry\"],[\"per_transferred\",\"Stock Entry\"]],\"order_by\":\"`tabStock Entry`.`modified` desc\",\"add_totals_row\":0,\"page_length\":100,\"column_widths\":{\"workflow_state\":178,\"name\":120,\"docstatus\":120,\"stock_entry_type\":120,\"purpose\":120,\"from_warehouse\":120,\"to_warehouse\":120,\"per_transferred\":120},\"group_by\":null}",
+  "letter_head": "AlSalem",
+  "modified": "2024-03-20 12:00:14.596097",
+  "module": "Stock",
+  "name": "Pending request -Stock Entry",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Stock Entry",
+  "reference_report": null,
+  "report_name": "Pending request -Stock Entry",
+  "report_script": null,
+  "report_type": "Report Builder",
+  "roles": [
+   {
+    "parent": "Pending request -Stock Entry",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock Manager"
+   },
+   {
+    "parent": "Pending request -Stock Entry",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   },
+   {
+    "parent": "Pending request -Stock Entry",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "President"
+   },
+   {
+    "parent": "Pending request -Stock Entry",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "System Manager"
+   },
+   {
+    "parent": "Pending request -Stock Entry",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "Pending request -Stock Entry",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts User"
+   }
+  ]
+ },
+ {
+  "_liked_by": "[\"mohamedtarek@frontlinesolutions.cloud\"]",
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": "{\"filters\":[[\"unit\",\"unit_status\",\"=\",\"Sold\",false]],\"fields\":[[\"block\",\"unit\"],[\"_aggregate_column\",\"unit\"]],\"order_by\":\"`tabunit`.`modified` desc\",\"add_totals_row\":true,\"page_length\":20,\"column_widths\":{\"block\":182,\"_aggregate_column\":245},\"group_by\":{\"group_by\":\"`tabunit`.`block`\",\"aggregate_function\":\"sum\",\"aggregate_on\":\"`tabunit`.`unit_price`\"}}",
+  "letter_head": "AlSalem",
+  "modified": "2024-08-07 13:09:33.155452",
+  "module": "Frontline Elsalem",
+  "name": "Total Sales",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "unit",
+  "reference_report": null,
+  "report_name": "Total Sales",
+  "report_script": null,
+  "report_type": "Report Builder",
+  "roles": [
+   {
+    "parent": "Total Sales",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "System Manager"
+   }
+  ]
+ },
+ {
+  "_liked_by": "[\"mohamedtarek@frontlinesolutions.cloud\"]",
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": "{\"filters\":[],\"fields\":[[\"block\",\"unit\"],[\"_aggregate_column\",\"unit\"]],\"order_by\":\"`tabunit`.`modified` desc\",\"add_totals_row\":true,\"page_length\":100,\"column_widths\":{\"block\":188,\"_aggregate_column\":222},\"group_by\":{\"group_by\":\"`tabunit`.`block`\",\"aggregate_function\":\"sum\",\"aggregate_on\":\"`tabunit`.`unit_price`\"}}",
+  "letter_head": "AlSalem",
+  "modified": "2024-08-05 21:59:08.964676",
+  "module": "Frontline Elsalem",
+  "name": "\u0627\u0644\u0645\u0628\u064a\u0639\u0627\u062a \u0644\u0643\u0644 \u0628\u0631\u062c \u0633\u0643\u0646\u0649",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "unit",
+  "reference_report": null,
+  "report_name": "\u0627\u0644\u0645\u0628\u064a\u0639\u0627\u062a \u0644\u0643\u0644 \u0628\u0631\u062c \u0633\u0643\u0646\u0649",
+  "report_script": null,
+  "report_type": "Report Builder",
+  "roles": [
+   {
+    "parent": "\u0627\u0644\u0645\u0628\u064a\u0639\u0627\u062a \u0644\u0643\u0644 \u0628\u0631\u062c \u0633\u0643\u0646\u0649",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "System Manager"
+   }
+  ]
+ },
+ {
+  "_liked_by": "[\"mohamedtarek@frontlinesolutions.cloud\"]",
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": "{\"filters\":[],\"fields\":[[\"block\",\"unit\"],[\"_aggregate_column\",\"unit\"]],\"order_by\":\"`tabunit`.`modified` desc\",\"add_totals_row\":true,\"page_length\":100,\"column_widths\":{\"block\":188,\"_aggregate_column\":222},\"group_by\":{\"group_by\":\"`tabunit`.`block`\",\"aggregate_function\":\"sum\",\"aggregate_on\":\"`tabunit`.`unit_price`\"}}",
+  "letter_head": "AlSalem",
+  "modified": "2024-08-05 21:59:32.306122",
+  "module": "Frontline Elsalem",
+  "name": "\u0642\u064a\u0645\u0629 \u0627\u0644\u0648\u062d\u062f\u0627\u062a \u0644\u0643\u0644 \u0628\u0631\u062c \u0633\u0643\u0646\u0649",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "unit",
+  "reference_report": null,
+  "report_name": "\u0642\u064a\u0645\u0629 \u0627\u0644\u0648\u062d\u062f\u0627\u062a \u0644\u0643\u0644 \u0628\u0631\u062c \u0633\u0643\u0646\u0649",
+  "report_script": null,
+  "report_type": "Report Builder",
+  "roles": [
+   {
+    "parent": "\u0642\u064a\u0645\u0629 \u0627\u0644\u0648\u062d\u062f\u0627\u062a \u0644\u0643\u0644 \u0628\u0631\u062c \u0633\u0643\u0646\u0649",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "System Manager"
+   }
+  ]
+ },
+ {
+  "_liked_by": "[\"mohamedtarek@frontlinesolutions.cloud\"]",
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": "{\"filters\":[],\"fields\":[[\"unit_status\",\"unit\"],[\"_aggregate_column\",\"unit\"]],\"order_by\":\"`tabunit`.`modified` desc\",\"add_totals_row\":true,\"page_length\":100,\"column_widths\":{\"unit_status\":191,\"_aggregate_column\":222},\"group_by\":{\"group_by\":\"`tabunit`.`unit_status`\",\"aggregate_function\":\"count\",\"aggregate_on\":null}}",
+  "letter_head": "AlSalem",
+  "modified": "2024-08-05 22:01:05.477696",
+  "module": "Frontline Elsalem",
+  "name": "\u062d\u0627\u0644\u0629 \u0627\u0644\u0648\u062d\u062f\u0627\u062a \u0627\u0644\u0633\u0643\u0646\u064a\u0629",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "unit",
+  "reference_report": null,
+  "report_name": "\u062d\u0627\u0644\u0629 \u0627\u0644\u0648\u062d\u062f\u0627\u062a \u0627\u0644\u0633\u0643\u0646\u064a\u0629",
+  "report_script": null,
+  "report_type": "Report Builder",
+  "roles": [
+   {
+    "parent": "\u062d\u0627\u0644\u0629 \u0627\u0644\u0648\u062d\u062f\u0627\u062a \u0627\u0644\u0633\u0643\u0646\u064a\u0629",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "System Manager"
+   }
+  ]
+ },
+ {
+  "_liked_by": "[\"mohamedtarek@frontlinesolutions.cloud\"]",
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": "{\"filters\":[],\"fields\":[[\"block\",\"unit\"],[\"_aggregate_column\",\"unit\"]],\"order_by\":\"`tabunit`.`modified` desc\",\"add_totals_row\":true,\"page_length\":20,\"column_widths\":{\"block\":182,\"_aggregate_column\":245},\"group_by\":{\"group_by\":\"`tabunit`.`block`\",\"aggregate_function\":\"sum\",\"aggregate_on\":\"`tabunit`.`unit_price`\"}}",
+  "letter_head": "AlSalem",
+  "modified": "2024-08-07 13:10:57.558876",
+  "module": "Frontline Elsalem",
+  "name": "Total Inventory",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "unit",
+  "reference_report": null,
+  "report_name": "Total Inventory",
+  "report_script": null,
+  "report_type": "Report Builder",
+  "roles": [
+   {
+    "parent": "Total Inventory",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "System Manager"
+   }
+  ]
+ },
+ {
+  "add_total_row": 1,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": "{\"filters\":[[\"unit\",\"block\",\"!=\",\"Mall\",false],[\"unit\",\"unit_status\",\"=\",\"Sold\"]],\"fields\":[[\"workflow_state\",\"unit\"],[\"name\",\"unit\"],[\"docstatus\",\"unit\"],[\"block\",\"unit\"],[\"unit_price\",\"unit\"],[\"maintenance_price\",\"unit\"]],\"order_by\":\"`tabunit`.`modified` desc\",\"add_totals_row\":true,\"page_length\":500,\"column_widths\":{\"workflow_state\":120,\"name\":120,\"docstatus\":120,\"block\":120,\"unit_price\":186,\"maintenance_price\":192},\"group_by\":null}",
+  "letter_head": "AlSalem",
+  "modified": "2024-09-23 12:11:03.831311",
+  "module": "Frontline Elsalem",
+  "name": "\u0625\u062c\u0645\u0627\u0644\u064a \u0642\u064a\u0645\u0629 \u0627\u0644\u0648\u062d\u062f\u0627\u062a \u0627\u0644\u0645\u0628\u0627\u0639\u0629",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "unit",
+  "reference_report": null,
+  "report_name": "\u0625\u062c\u0645\u0627\u0644\u064a \u0642\u064a\u0645\u0629 \u0627\u0644\u0648\u062d\u062f\u0627\u062a \u0627\u0644\u0645\u0628\u0627\u0639\u0629",
+  "report_script": null,
+  "report_type": "Report Builder",
+  "roles": [
+   {
+    "parent": "\u0625\u062c\u0645\u0627\u0644\u064a \u0642\u064a\u0645\u0629 \u0627\u0644\u0648\u062d\u062f\u0627\u062a \u0627\u0644\u0645\u0628\u0627\u0639\u0629",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "System Manager"
+   },
+   {
+    "parent": "\u0625\u062c\u0645\u0627\u0644\u064a \u0642\u064a\u0645\u0629 \u0627\u0644\u0648\u062d\u062f\u0627\u062a \u0627\u0644\u0645\u0628\u0627\u0639\u0629",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "CRM"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": "{\"filters\":[],\"fields\":[[\"workflow_state\",\"Supplier Quotation\"],[\"name\",\"Supplier Quotation\"],[\"docstatus\",\"Supplier Quotation\"],[\"title\",\"Supplier Quotation\"],[\"supplier\",\"Supplier Quotation\"],[\"company\",\"Supplier Quotation\"],[\"transaction_date\",\"Supplier Quotation\"],[\"valid_till\",\"Supplier Quotation\"],[\"grand_total\",\"Supplier Quotation\"],[\"currency\",\"Supplier Quotation\"],[\"base_grand_total\",\"Supplier Quotation\"],[\"status\",\"Supplier Quotation\"]],\"order_by\":\"`tabSupplier Quotation`.`modified` desc\",\"add_totals_row\":0,\"page_length\":100,\"column_widths\":{\"workflow_state\":120,\"name\":120,\"supplier\":120,\"company\":120,\"transaction_date\":120,\"valid_till\":120,\"grand_total\":120,\"currency\":120,\"base_grand_total\":120,\"status\":120},\"group_by\":null}",
+  "letter_head": "AlSalem",
+  "modified": "2024-10-13 14:07:41.757360",
+  "module": "Buying",
+  "name": "supplier qoutations",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Supplier Quotation",
+  "reference_report": null,
+  "report_name": "supplier qoutations",
+  "report_script": null,
+  "report_type": "Report Builder",
+  "roles": [
+   {
+    "parent": "supplier qoutations",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "supplier qoutations",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   },
+   {
+    "parent": "supplier qoutations",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase Manager"
+   },
+   {
+    "parent": "supplier qoutations",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "President"
+   },
+   {
+    "parent": "supplier qoutations",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "supplier qoutations",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   },
+   {
+    "parent": "supplier qoutations",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase Master Manager"
+   },
+   {
+    "parent": "supplier qoutations",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "supplier qoutations",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "CEO"
+   },
+   {
+    "parent": "supplier qoutations",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "CFO"
+   },
+   {
+    "parent": "supplier qoutations",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "System Manager"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": "{\"filters\":[[\"Supplier Quotation\",\"supplier\",\"=\",\"\u0645\u0648\u0631\u062f \u0646\u0642\u062f\u0649 \u0639\u0627\u0645\"],[\"Supplier Quotation\",\"company\",\"=\",\"B2B\"]],\"fields\":[[\"workflow_state\",\"Supplier Quotation\"],[\"name\",\"Supplier Quotation\"],[\"docstatus\",\"Supplier Quotation\"],[\"total\",\"Supplier Quotation\"],[\"currency\",\"Supplier Quotation\"],[\"base_total\",\"Supplier Quotation\"]],\"order_by\":\"`tabSupplier Quotation`.`modified` desc\",\"add_totals_row\":0,\"page_length\":500,\"column_widths\":{\"workflow_state\":120,\"name\":120,\"total\":120,\"currency\":120,\"base_total\":120},\"group_by\":null}",
+  "letter_head": "AlSalem",
+  "modified": "2024-12-17 21:15:46.486619",
+  "module": "Buying",
+  "name": "B2B",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Supplier Quotation",
+  "reference_report": null,
+  "report_name": "B2B",
+  "report_script": null,
+  "report_type": "Report Builder",
+  "roles": [
+   {
+    "parent": "B2B",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "B2B",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   },
+   {
+    "parent": "B2B",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase Manager"
+   },
+   {
+    "parent": "B2B",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "President"
+   },
+   {
+    "parent": "B2B",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "B2B",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   },
+   {
+    "parent": "B2B",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase Master Manager"
+   },
+   {
+    "parent": "B2B",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "B2B",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "CEO"
+   },
+   {
+    "parent": "B2B",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "CFO"
+   },
+   {
+    "parent": "B2B",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "System Manager"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [
+   {
+    "fieldname": "from_date",
+    "fieldtype": "Date",
+    "label": "From Date",
+    "mandatory": 0,
+    "options": null,
+    "parent": "Purchase Receipts",
+    "parentfield": "filters",
+    "parenttype": "Report",
+    "wildcard_filter": 0
+   },
+   {
+    "fieldname": "to_date",
+    "fieldtype": "Date",
+    "label": "To Date",
+    "mandatory": 0,
+    "options": null,
+    "parent": "Purchase Receipts",
+    "parentfield": "filters",
+    "parenttype": "Report",
+    "wildcard_filter": 0
+   }
+  ],
+  "is_standard": "No",
+  "javascript": null,
+  "json": null,
+  "letter_head": "AlSalem",
+  "modified": "2025-03-12 21:15:29.707940",
+  "module": "Buying",
+  "name": "Purchase Receipts",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": "SELECT \n    pi.posting_date AS \"\u062a\u0627\u0631\u064a\u062e \u0627\u0644\u0634\u0631\u0627\u0621\",\n    pi.supplier AS \"\u0627\u0644\u0645\u0648\u0631\u062f:Link/Supplier:200\",\n    pii.item_code AS \"\u0627\u0644\u0645\u0646\u062a\u062c:Link/Item:200\",\n    pii.item_name AS \"\u0627\u0633\u0645 \u0627\u0644\u0645\u0646\u062a\u062c\",\n    pii.qty AS \"\u0627\u0644\u0643\u0645\u064a\u0629\",\n    pii.rate AS \"\u0627\u0644\u0633\u0639\u0631 \u0644\u0643\u0644 \u0648\u062d\u062f\u0629\",\n    pii.amount AS \"\u0625\u062c\u0645\u0627\u0644\u064a \u0627\u0644\u0633\u0639\u0631\",\n    COALESCE(SUM(b.actual_qty), 0) AS \"\u0627\u0644\u0645\u062a\u0628\u0642\u064a \u0628\u0627\u0644\u0645\u062e\u0632\u0646\"  -- \u062c\u0645\u0639 \u0627\u0644\u0643\u0645\u064a\u0629 \u0645\u0646 \u062c\u0645\u064a\u0639 \u0627\u0644\u0645\u062e\u0627\u0632\u0646\nFROM \n    `tabPurchase Invoice` pi\nJOIN \n    `tabPurchase Invoice Item` pii ON pi.name = pii.parent\nLEFT JOIN \n    `tabBin` b ON pii.item_code = b.item_code\nWHERE \n    pi.posting_date BETWEEN COALESCE(%(from_date)s, '2024-10-15') \n                        AND COALESCE(%(to_date)s, CURDATE())\nGROUP BY \n    pi.posting_date, pi.supplier, pii.item_code, pii.item_name, pii.qty, pii.rate, pii.amount\nORDER BY \n    pi.posting_date DESC;",
+  "ref_doctype": "Purchase Order",
+  "reference_report": null,
+  "report_name": "Purchase Receipts",
+  "report_script": "",
+  "report_type": "Query Report",
+  "roles": [
+   {
+    "parent": "Purchase Receipts",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase Manager"
+   },
+   {
+    "parent": "Purchase Receipts",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   },
+   {
+    "parent": "Purchase Receipts",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "Purchase Receipts",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Admin"
+   },
+   {
+    "parent": "Purchase Receipts",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "President"
+   },
+   {
+    "parent": "Purchase Receipts",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "supplyed chain"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": "{\"filters\":[[\"Material Request\",\"docstatus\",\"=\",\"1\",false],[\"Material Request\",\"transaction_date\",\"Timespan\",\"this year\",false],[\"Material Request\",\"material_request_type\",\"=\",\"Material Issue\"],[\"Material Request\",\"status\",\"=\",\"Pending\"],[\"Material Request\",\"company\",\"=\",\"Al Salem Realestate\"]],\"fields\":[[\"workflow_state\",\"Material Request\"],[\"name\",\"Material Request\"],[\"docstatus\",\"Material Request\"],[\"title\",\"Material Request\"],[\"material_request_type\",\"Material Request\"],[\"status\",\"Material Request\"],[\"transaction_date\",\"Material Request\"],[\"schedule_date\",\"Material Request\"],[\"company\",\"Material Request\"],[\"department\",\"Material Request\"],[\"manager\",\"Material Request\"],[\"requester\",\"Material Request\"],[\"per_ordered\",\"Material Request\"],[\"per_received\",\"Material Request\"],[\"transfer_status\",\"Material Request\"]],\"order_by\":\"`tabMaterial Request`.`modified` desc\",\"add_totals_row\":0,\"page_length\":20,\"column_widths\":{\"workflow_state\":120,\"name\":120,\"title\":120,\"material_request_type\":120,\"status\":100,\"transaction_date\":100,\"schedule_date\":120,\"company\":150,\"department\":120,\"manager\":120,\"requester\":120,\"per_ordered\":120,\"per_received\":120,\"transfer_status\":120},\"group_by\":null}",
+  "letter_head": "AlSalem",
+  "modified": "2025-05-08 12:29:49.969156",
+  "module": "Stock",
+  "name": "b",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Material Request",
+  "reference_report": null,
+  "report_name": "b",
+  "report_script": null,
+  "report_type": "Report Builder",
+  "roles": [
+   {
+    "parent": "b",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock Manager"
+   },
+   {
+    "parent": "b",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   },
+   {
+    "parent": "b",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Direct Manager"
+   },
+   {
+    "parent": "b",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "System Manager"
+   },
+   {
+    "parent": "b",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Requster"
+   },
+   {
+    "parent": "b",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Admin"
+   },
+   {
+    "parent": "b",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "President"
+   },
+   {
+    "parent": "b",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "operation manager"
+   },
+   {
+    "parent": "b",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "CEO"
+   },
+   {
+    "parent": "b",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Auditor"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": "{\"filters\":[[\"Item\",\"disabled\",\"=\",0,false]],\"fields\":[[\"name\",\"Item\"],[\"docstatus\",\"Item\"],[\"item_name\",\"Item\"],[\"item_group\",\"Item\"],[\"has_variants\",\"Item\"],[\"stock_uom\",\"Item\"],[\"disabled\",\"Item\"]],\"order_by\":\"`tabItem`.`modified` desc\",\"add_totals_row\":0,\"page_length\":20,\"column_widths\":{\"name\":120,\"docstatus\":120,\"item_name\":120,\"item_group\":120,\"has_variants\":120,\"stock_uom\":120,\"disabled\":120},\"group_by\":null}",
+  "letter_head": "AlSalem",
+  "modified": "2025-05-11 13:12:47.703569",
+  "module": "Stock",
+  "name": "vR",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": null,
+  "ref_doctype": "Item",
+  "reference_report": null,
+  "report_name": "vR",
+  "report_script": null,
+  "report_type": "Report Builder",
+  "roles": [
+   {
+    "parent": "vR",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Manufacturing User"
+   },
+   {
+    "parent": "vR",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Sales User"
+   },
+   {
+    "parent": "vR",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   },
+   {
+    "parent": "vR",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Item Manager"
+   },
+   {
+    "parent": "vR",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "vR",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "vR",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Maintenance User"
+   },
+   {
+    "parent": "vR",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock Manager"
+   },
+   {
+    "parent": "vR",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "All"
+   },
+   {
+    "parent": "vR",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Admin"
+   },
+   {
+    "parent": "vR",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Requster"
+   },
+   {
+    "parent": "vR",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "President"
+   },
+   {
+    "parent": "vR",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase Master Manager"
+   },
+   {
+    "parent": "vR",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts Manager"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [
+   {
+    "fieldname": "Item Code",
+    "fieldtype": "Link",
+    "label": "Item Code",
+    "mandatory": 0,
+    "options": "Item",
+    "parent": "Items List",
+    "parentfield": "filters",
+    "parenttype": "Report",
+    "wildcard_filter": 0
+   },
+   {
+    "fieldname": "Item Group",
+    "fieldtype": "Link",
+    "label": "Item Group",
+    "mandatory": 0,
+    "options": "Item Group",
+    "parent": "Items List",
+    "parentfield": "filters",
+    "parenttype": "Report",
+    "wildcard_filter": 0
+   }
+  ],
+  "is_standard": "No",
+  "javascript": null,
+  "json": null,
+  "letter_head": "AlSalem",
+  "modified": "2025-06-03 23:58:43.256040",
+  "module": "Stock",
+  "name": "Items List",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": "SELECT \r\n    @rownum := @rownum + 1 AS \"\u0645\u0633\u0644\u0633\u0644:Int:60\",\r\n    item.item_code AS \"\u0643\u0648\u062f \u0627\u0644\u0635\u0646\u0641:Link/Item:150\",\r\n    item.item_name AS \"\u0627\u0633\u0645 \u0627\u0644\u0635\u0646\u0641::200\",\r\n    item.item_group AS \"\u0645\u062c\u0645\u0648\u0639\u0629 \u0627\u0644\u0635\u0646\u0641:Link/Item Group:150\",\r\n    item.stock_uom AS \"\u0627\u0644\u0648\u062d\u062f\u0629:Link/UOM:100\",\r\n    SUM(IFNULL(bin.actual_qty, 0)) AS \"\u0625\u062c\u0645\u0627\u0644\u064a \u0627\u0644\u0643\u0645\u064a\u0629:Float:120\"\r\nFROM \r\n    `tabItem` item\r\nLEFT JOIN \r\n    `tabBin` bin ON bin.item_code = item.item_code,\r\n    (SELECT @rownum := 0) r\r\nWHERE \r\n    item.disabled = 0\r\nGROUP BY \r\n    item.item_code, item.item_name, item.item_group, item.stock_uom\r\nORDER BY \r\n    item.item_group, item.item_code;\r\n",
+  "ref_doctype": "Item",
+  "reference_report": null,
+  "report_name": "Items List",
+  "report_script": null,
+  "report_type": "Query Report",
+  "roles": [
+   {
+    "parent": "Items List",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Manufacturing User"
+   },
+   {
+    "parent": "Items List",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Sales User"
+   },
+   {
+    "parent": "Items List",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock User"
+   },
+   {
+    "parent": "Items List",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Item Manager"
+   },
+   {
+    "parent": "Items List",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "Items List",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "Items List",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Maintenance User"
+   },
+   {
+    "parent": "Items List",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Stock Manager"
+   },
+   {
+    "parent": "Items List",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "All"
+   },
+   {
+    "parent": "Items List",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Admin"
+   },
+   {
+    "parent": "Items List",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Requster"
+   },
+   {
+    "parent": "Items List",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "President"
+   },
+   {
+    "parent": "Items List",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase Master Manager"
+   },
+   {
+    "parent": "Items List",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts Manager"
+   }
+  ]
+ },
+ {
+  "add_total_row": 0,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": null,
+  "letter_head": "AlSalem",
+  "modified": "2025-06-11 23:17:47.582505",
+  "module": "Accounts",
+  "name": "Withholding Tax",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": "SELECT\r\n    pi.name AS \"Invoice No:Link/Purchase Invoice:120\",\r\n    pi.posting_date AS \"Posting Date:Date:100\",\r\n    pi.supplier AS \"Supplier:Link/Supplier:200\",\r\n    s.tax_id AS \"Tax ID::150\",\r\n    pi.base_net_total AS \"Net Total (Before Tax):Currency:130\",\r\n\r\n    -- \u0625\u062c\u0645\u0627\u0644\u064a \u0636\u0631\u064a\u0628\u0629 \u0627\u0644\u0625\u0636\u0627\u0641\u0629\r\n    SUM(CASE \r\n        WHEN ptc.charge_type = 'On Net Total' THEN ptc.tax_amount\r\n        ELSE 0 END) AS \"Add Tax Amount:Currency:120\",\r\n\r\n    -- \u0625\u062c\u0645\u0627\u0644\u064a \u0636\u0631\u064a\u0628\u0629 \u0627\u0644\u062e\u0635\u0645\r\n    SUM(CASE \r\n        WHEN ptc.charge_type = 'Deduction' THEN ptc.tax_amount\r\n        ELSE 0 END) AS \"Discount Tax Amount:Currency:130\"\r\n\r\nFROM\r\n    `tabPurchase Invoice` pi\r\nLEFT JOIN\r\n    `tabSupplier` s ON pi.supplier = s.name\r\nLEFT JOIN\r\n    `tabPurchase Taxes and Charges` ptc ON ptc.parent = pi.name\r\n\r\nWHERE\r\n    pi.docstatus = 1\r\n    AND YEAR(pi.posting_date) = 2025\r\n\r\nGROUP BY\r\n    pi.name, pi.posting_date, pi.supplier, s.tax_id, pi.base_net_total\r\n\r\nORDER BY\r\n    pi.posting_date DESC\r\n",
+  "ref_doctype": "Purchase Invoice",
+  "reference_report": null,
+  "report_name": "Withholding Tax",
+  "report_script": null,
+  "report_type": "Query Report",
+  "roles": [
+   {
+    "parent": "Withholding Tax",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Auditor"
+   },
+   {
+    "parent": "Withholding Tax",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts User"
+   },
+   {
+    "parent": "Withholding Tax",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Accounts Manager"
+   },
+   {
+    "parent": "Withholding Tax",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Purchase User"
+   },
+   {
+    "parent": "Withholding Tax",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "Admin"
+   },
+   {
+    "parent": "Withholding Tax",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "President"
+   },
+   {
+    "parent": "Withholding Tax",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "System Manager"
+   }
+  ]
+ },
+ {
+  "add_total_row": 1,
+  "columns": [],
+  "disable_prepared_report": 0,
+  "disabled": 0,
+  "docstatus": 0,
+  "doctype": "Report",
+  "filters": [],
+  "is_standard": "No",
+  "javascript": null,
+  "json": null,
+  "letter_head": "AlSalem",
+  "modified": "2025-07-16 14:40:12.354477",
+  "module": "Frontline Elsalem",
+  "name": "\u062a\u0642\u0631\u064a\u0631 \u0627\u0644\u0648\u062d\u062f\u0627\u062a \u0627\u0644\u0633\u0643\u0646\u064a\u0629",
+  "parent": null,
+  "parentfield": null,
+  "parenttype": null,
+  "prepared_report": 0,
+  "query": "SELECT\r\n    c.customer_name AS \"\u0627\u0633\u0645 \u0627\u0644\u0639\u0645\u064a\u0644\",\r\n    SUM(cd.installments) AS \"\u0625\u062c\u0645\u0627\u0644\u064a \u0627\u0644\u0623\u0642\u0633\u0627\u0637:Currency:150\",\r\n    SUM(cd.paid) AS \"\u0625\u062c\u0645\u0627\u0644\u064a \u0627\u0644\u0645\u0633\u062f\u062f:Currency:150\",\r\n    SUM(cd.remaining) AS \"\u0625\u062c\u0645\u0627\u0644\u064a \u0627\u0644\u0645\u062a\u0628\u0642\u064a:Currency:150\"\r\nFROM\r\n    `tabContract details` cd\r\nJOIN\r\n    `tabunit` u ON cd.parent = u.name\r\nJOIN\r\n    `tabCustomer` c ON u.customer_link = c.name\r\nGROUP BY\r\n    c.customer_name\r\nORDER BY\r\n    c.customer_name;\r\n",
+  "ref_doctype": "unit",
+  "reference_report": null,
+  "report_name": "\u062a\u0642\u0631\u064a\u0631 \u0627\u0644\u0648\u062d\u062f\u0627\u062a \u0627\u0644\u0633\u0643\u0646\u064a\u0629",
+  "report_script": null,
+  "report_type": "Query Report",
+  "roles": [
+   {
+    "parent": "\u062a\u0642\u0631\u064a\u0631 \u0627\u0644\u0648\u062d\u062f\u0627\u062a \u0627\u0644\u0633\u0643\u0646\u064a\u0629",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "System Manager"
+   },
+   {
+    "parent": "\u062a\u0642\u0631\u064a\u0631 \u0627\u0644\u0648\u062d\u062f\u0627\u062a \u0627\u0644\u0633\u0643\u0646\u064a\u0629",
+    "parentfield": "roles",
+    "parenttype": "Report",
+    "role": "CRM"
+   }
+  ]
+ }
+]
