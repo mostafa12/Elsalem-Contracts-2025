@@ -1,0 +1,1 @@
+elsalem_contracts_2025.patches.add_issue_and_purchase_option

@@ -1,12 +1,9 @@
-Metadata-Version: 2.1
-Name: elsalem-contracts-2025
+Metadata-Version: 2.4
+Name: elsalem_contracts_2025
 Version: 0.0.1
 Summary: Elsalem Contracts 2025
-Home-page: UNKNOWN
 Author: hossam
 Author-email: hossam.2030@gmail.com
-License: UNKNOWN
-Platform: UNKNOWN
-
-UNKNOWN
-
+Dynamic: author
+Dynamic: author-email
+Dynamic: summary

@@ -11,33 +11,36 @@ app_license = "MIT"
 
 
 doctype_js = {
-    "Purchase Order": "public/js/purchase_order.js"
+    "Purchase Order": "public/js/purchase_order.js",
+    "Request for Quotation": "public/js/request_for_quotation.js",
+    "Material Request": "public/js/material_request.js",
+    "Supplier Quotation": "public/js/supplier_quotation.js"
 }
 
 
-doctype_list = ["Issue"]
-
-fixtures = [
-    {"doctype": "Custom Field", "filters": [["dt", "in", doctype_list]]},
-    {"doctype": "Client Script", "filters": [["dt", "in", doctype_list]]},
-    {"doctype": "Server Script", "filters": [["reference_doctype", "in", doctype_list]]},
-    {"doctype": "Property Setter", "filters": [["doc_type", "in", doctype_list]]},
-    {"doctype": "Custom DocPerm", "filters": [["parent", "in", doctype_list]]},
-    {"doctype": "Print Format", "filters": [["doc_type", "in", doctype_list]]},
-    {"doctype": "Notification", "filters": [["document_type", "in", doctype_list]]},
-    {"doctype": "Workflow", "filters": [["document_type", "in", doctype_list]]},
-    {"doctype": "Workflow Action"},
-    {"doctype": "Workflow State"},
-    {"doctype": "Custom Role"},
-    {"doctype": "User Permission"},
-    {"doctype": "Translation"},
-    {"doctype": "Dashboard", "filters": [["is_standard", "=", 0]]},
-    {"doctype": "Dashboard Chart", "filters": [["is_standard", "=", 0]]},
-    {"doctype": "Number Card", "filters": [["is_standard", "=", 0]]},
-    {"doctype": "Report", "filters": [["is_standard", "=", "No"]]},
-    {"doctype": "Page", "filters": [["module", "=", "Custom App"]]},
-    {"doctype": "Module Onboarding", "filters": [["module", "=", "Custom App"]]}
-]
+# doctype_list = ["Issue"]
+#
+# fixtures = [
+#     {"doctype": "Custom Field", "filters": [["dt", "in", doctype_list]]},
+#     {"doctype": "Client Script", "filters": [["dt", "in", doctype_list]]},
+#     {"doctype": "Server Script", "filters": [["reference_doctype", "in", doctype_list]]},
+#     {"doctype": "Property Setter", "filters": [["doc_type", "in", doctype_list]]},
+#     {"doctype": "Custom DocPerm", "filters": [["parent", "in", doctype_list]]},
+#     {"doctype": "Print Format", "filters": [["doc_type", "in", doctype_list]]},
+#     {"doctype": "Notification", "filters": [["document_type", "in", doctype_list]]},
+#     {"doctype": "Workflow", "filters": [["document_type", "in", doctype_list]]},
+#     {"doctype": "Workflow Action"},
+#     {"doctype": "Workflow State"},
+#     {"doctype": "Custom Role"},
+#     {"doctype": "User Permission"},
+#     {"doctype": "Translation"},
+#     {"doctype": "Dashboard", "filters": [["is_standard", "=", 0]]},
+#     {"doctype": "Dashboard Chart", "filters": [["is_standard", "=", 0]]},
+#     {"doctype": "Number Card", "filters": [["is_standard", "=", 0]]},
+#     {"doctype": "Report", "filters": [["is_standard", "=", "No"]]},
+#     {"doctype": "Page", "filters": [["module", "=", "Custom App"]]},
+#     {"doctype": "Module Onboarding", "filters": [["module", "=", "Custom App"]]}
+# ]
 
 
 # Includes in <head>
