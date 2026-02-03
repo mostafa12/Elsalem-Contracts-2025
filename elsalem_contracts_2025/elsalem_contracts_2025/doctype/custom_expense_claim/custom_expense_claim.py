@@ -6,6 +6,8 @@ from frappe import _
 from frappe.model.document import Document
 from frappe.utils import flt, nowdate
 
+from elsalem_contracts_2025.elsalem_contracts_2025.overrides.employee_advance import get_employee_advance_balance
+
 
 class CustomExpenseClaim(Document):
 	def validate(self):
@@ -36,6 +38,16 @@ class CustomExpenseClaim(Document):
 		for entry in self.accounting_entries:
 			if flt(entry.debit) <= 0:
 				frappe.throw(_("Row #{0}: Debit amount must be greater than 0").format(entry.idx))
+
+	def check_employee_advance_balance(self):
+		employee_balance = get_employee_advance_balance(self.employee, self.posting_date, self.company)
+		allow_over_balance_limit = frappe.db.get_value("Employee", self.employee, "allow_over_balance_limit")
+
+		if flt(self.total_debit_amount) > flt(employee_balance) and not allow_over_balance_limit:
+			frappe.throw(_(f"Total debit amount cannot be greater than employee balance: {employee_balance}"))
+
+	def before_submit(self):
+		self.check_employee_advance_balance()
 	
 	def on_submit(self):
 		"""Create Journal Entry on submit"""

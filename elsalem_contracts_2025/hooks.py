@@ -14,7 +14,8 @@ doctype_js = {
     "Purchase Order": "public/js/purchase_order.js",
     "Request for Quotation": "public/js/request_for_quotation.js",
     "Material Request": "public/js/material_request.js",
-    "Supplier Quotation": "public/js/supplier_quotation.js"
+    "Supplier Quotation": "public/js/supplier_quotation.js",
+	"Employee Advance": "public/js/employee_advance.js"
 }
 
 
@@ -129,13 +130,11 @@ doctype_js = {
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-#	"*": {
-#		"on_update": "method",
-#		"on_cancel": "method",
-#		"on_trash": "method"
-#	}
-# }
+doc_events = {
+	"Employee Advance": {
+		"validate": "elsalem_contracts_2025.elsalem_contracts_2025.overrides.employee_advance.validate"
+	}
+}
 
 # Scheduled Tasks
 # ---------------
