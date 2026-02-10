@@ -16,7 +16,8 @@ frappe.ui.form.on("Employee Advance", {
             args: {
                 employee: frm.doc.employee,
                 posting_date: frm.doc.posting_date,
-                company: frm.doc.company
+                company: frm.doc.company,
+                advance_account: frm.doc.advance_account
             },
             callback: function (r) {
                 frm.set_value("custom_party_balance", r.message);

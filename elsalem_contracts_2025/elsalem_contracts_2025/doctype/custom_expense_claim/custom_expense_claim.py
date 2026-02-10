@@ -55,12 +55,17 @@ class CustomExpenseClaim(Document):
 	
 	def on_cancel(self):
 		"""Cancel and delete linked Journal Entry on cancellation"""
-		if self.journal_entry:
-			je = frappe.get_doc("Journal Entry", self.journal_entry)
+		self.ignore_linked_doctypes = ("Journal Entry")
+		journal_entry = self.journal_entry
+		self.db_set("journal_entry", None)
+		self.reload()
+
+		if journal_entry:
+			je = frappe.get_doc("Journal Entry", journal_entry)
 			if je.docstatus == 1:
 				je.cancel()
-			frappe.delete_doc("Journal Entry", self.journal_entry)
-			self.db_set("journal_entry", None)
+			else:
+				je.delete()
 	
 	def create_journal_entry(self):
 		"""Create Journal Entry with debit entries from child table and credit to payable account"""

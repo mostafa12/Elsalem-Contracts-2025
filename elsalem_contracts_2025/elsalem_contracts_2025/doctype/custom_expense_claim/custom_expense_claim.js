@@ -17,6 +17,10 @@ frappe.ui.form.on('Custom Expense Claim', {
 
         // Apply filters
         set_filters(frm);
+
+        frm.ignore_doctypes_on_cancel_all = [
+            "Journal Entry"
+        ];
     },
 
     company: function (frm) {

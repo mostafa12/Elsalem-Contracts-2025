@@ -133,6 +133,10 @@ doctype_js = {
 doc_events = {
 	"Employee Advance": {
 		"validate": "elsalem_contracts_2025.elsalem_contracts_2025.overrides.employee_advance.validate"
+	},
+	"Journal Entry": {
+		"before_cancel": "elsalem_contracts_2025.elsalem_contracts_2025.overrides.journal_entry.before_cancel",
+		"on_cancel": "elsalem_contracts_2025.elsalem_contracts_2025.overrides.journal_entry.on_cancel",
 	}
 }
 

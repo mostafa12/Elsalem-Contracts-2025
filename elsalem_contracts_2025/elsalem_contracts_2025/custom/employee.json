@@ -169,7 +169,7 @@
    "insert_after": "allow_over_balance_limit",
    "is_system_generated": 0,
    "is_virtual": 0,
-   "label": "Custodies Limit",
+   "label": "Custodies Party Balance Limit",
    "length": 0,
    "link_filters": null,
    "mandatory_depends_on": null,
