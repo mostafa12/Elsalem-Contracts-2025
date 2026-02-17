@@ -134,5 +134,5 @@ function update_total_supplier_score(frm) {
     frm.doc.purchase_order_vendor_evaluation.forEach(row => {
         total_score += parseFloat(row.score || 0);
     });
-    frm.set_value('total_supplier_score', total_score);
+    frm.set_value('total_supplier_score_', total_score);
 }
