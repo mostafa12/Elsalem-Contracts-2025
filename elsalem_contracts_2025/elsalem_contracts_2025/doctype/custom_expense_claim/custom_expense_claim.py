@@ -96,6 +96,11 @@ class CustomExpenseClaim(Document):
 			if entry.party_type:
 				je_row["party_type"] = entry.party_type
 				je_row["party"] = entry.party
+
+			if entry.purchase_invoice and entry.party_type == "Supplier":
+				je_row["reference_type"] = "Purchase Invoice"
+				je_row["reference_name"] = entry.purchase_invoice
+
 			je.append("accounts", je_row)
 		
 		# Add credit entry to payable account

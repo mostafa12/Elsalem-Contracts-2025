@@ -2,6 +2,29 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('Custom Expense Claim', {
+    setup: function (frm) {
+        frm.set_query('purchase_invoice', 'accounting_entries', function () {
+            return {
+                filters: {
+                    'company': frm.doc.company,
+                    'supplier': frm.doc.party,
+                    'status': 'Overdue',
+                    'docstatus': 1
+                }
+            };
+        });
+
+        frm.set_query('employee_advance', 'accounting_entries', function () {
+            return {
+                filters: {
+                    'company': frm.doc.company,
+                    'employee': frm.doc.employee,
+                    'docstatus': 1
+                }
+            };
+        });
+    },
+
     refresh: function (frm) {
         // Add custom button to view Journal Entry if it exists
         if (frm.doc.journal_entry && frm.doc.docstatus === 1) {

@@ -12,7 +12,10 @@
         "party",
         "cost_center",
         "project",
-        "user_remark"
+        "user_remark",
+        "reference_section",
+        "employee_advance",
+        "purchase_invoice"
     ],
     "fields": [
         {
@@ -59,6 +62,24 @@
             "fieldname": "user_remark",
             "fieldtype": "Small Text",
             "label": "Remarks"
+        },
+        {
+            "fieldname": "reference_section",
+            "fieldtype": "Section Break",
+            "label": "Reference"
+        },
+        {
+            "fieldname": "employee_advance",
+            "fieldtype": "Link",
+            "label": "Employee Advance",
+            "options": "Employee Advance"
+        },
+        {
+            "fieldname": "purchase_invoice",
+            "fieldtype": "Link",
+            "label": "Purchase Invoice",
+            "options": "Purchase Invoice",
+            "depends_on": "eval: doc.party_type == 'Supplier'"
         }
     ],
     "index_web_pages_for_search": 1,
