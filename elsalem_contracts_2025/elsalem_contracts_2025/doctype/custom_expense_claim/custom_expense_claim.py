@@ -124,3 +124,29 @@ class CustomExpenseClaim(Document):
 		frappe.msgprint(_("Journal Entry {0} created successfully (Draft)").format(
 			f'<a href="/app/journal-entry/{je.name}">{je.name}</a>'
 		))
+
+
+
+@frappe.whitelist()
+def get_total_debit_for_employee_advance(employee_advance):
+	"""Sum debit on all Custom Expense Accounting Entry rows pointing to this Employee Advance (any claim)."""
+	if not employee_advance:
+		return {"total": 0.0, "currency": None}
+
+	frappe.has_permission("Employee Advance", doc=employee_advance, throw=True)
+
+	total = frappe.db.sql(
+		"""
+		SELECT COALESCE(SUM(ce.debit), 0)
+		FROM `tabCustom Expense Accounting Entry` ce
+		INNER JOIN `tabCustom Expense Claim` cec
+			ON cec.name = ce.parent AND ce.parenttype = 'Custom Expense Claim'
+		WHERE ce.employee_advance = %s
+		""",
+		(employee_advance,),
+	)[0][0]
+
+	company = frappe.db.get_value("Employee Advance", employee_advance, "company")
+	currency = frappe.get_cached_value("Company", company, "default_currency") if company else None
+
+	return {"total": flt(total), "currency": currency}

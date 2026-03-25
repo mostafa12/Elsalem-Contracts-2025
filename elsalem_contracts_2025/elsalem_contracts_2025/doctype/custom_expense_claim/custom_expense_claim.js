@@ -3,11 +3,12 @@
 
 frappe.ui.form.on('Custom Expense Claim', {
     setup: function (frm) {
-        frm.set_query('purchase_invoice', 'accounting_entries', function () {
+        frm.set_query('purchase_invoice', 'accounting_entries', function (doc, cdt, cdn) {
+            let row = locals[cdt][cdn];
             return {
                 filters: {
                     'company': frm.doc.company,
-                    'supplier': frm.doc.party,
+                    'supplier': row.party,
                     'status': 'Overdue',
                     'docstatus': 1
                 }
@@ -51,18 +52,18 @@ frappe.ui.form.on('Custom Expense Claim', {
         set_filters(frm);
     },
 
-    employee: function (frm) {
-        // When employee changes, set default party only for new rows if they're empty
-        if (frm.doc.employee && frm.doc.accounting_entries) {
-            frm.doc.accounting_entries.forEach(function (row) {
-                // Only set if party is not already set
-                if (!row.party) {
-                    frappe.model.set_value(row.doctype, row.name, 'party_type', 'Employee');
-                    frappe.model.set_value(row.doctype, row.name, 'party', frm.doc.employee);
-                }
-            });
-        }
-    },
+    // employee: function (frm) {
+    //     // When employee changes, set default party only for new rows if they're empty
+    //     if (frm.doc.employee && frm.doc.accounting_entries) {
+    //         frm.doc.accounting_entries.forEach(function (row) {
+    //             // Only set if party is not already set
+    //             if (!row.party) {
+    //                 frappe.model.set_value(row.doctype, row.name, 'party_type', 'Employee');
+    //                 frappe.model.set_value(row.doctype, row.name, 'party', frm.doc.employee);
+    //             }
+    //         });
+    //     }
+    // },
 
     before_save: function (frm) {
         // Calculate total before saving
@@ -74,10 +75,10 @@ frappe.ui.form.on('Custom Expense Accounting Entry', {
     accounting_entries_add: function (frm, cdt, cdn) {
         // Set default party type and party when new row is added (only if employee exists)
         let row = locals[cdt][cdn];
-        if (frm.doc.employee && !row.party) {
-            frappe.model.set_value(cdt, cdn, 'party_type', 'Employee');
-            frappe.model.set_value(cdt, cdn, 'party', frm.doc.employee);
-        }
+        // if (frm.doc.employee && !row.party) {
+        //     frappe.model.set_value(cdt, cdn, 'party_type', 'Employee');
+        //     frappe.model.set_value(cdt, cdn, 'party', frm.doc.employee);
+        // }
 
         // Set default cost center if available
         if (frm.doc.cost_center && !row.cost_center) {
@@ -86,16 +87,64 @@ frappe.ui.form.on('Custom Expense Accounting Entry', {
 
         // Apply filters to the new row
         set_child_filters(frm, cdt, cdn);
+
+        if (!frm.is_new()) {
+            frm.trigger('make_dashboard');
+        }
+    },
+
+    account: function (frm, cdt, cdn) {
+        let row = locals[cdt][cdn];
+        if (row.account) {
+            let account = row.account;
+            get_account_details_for_party(account, frm.doc.company).then(function (details) {
+                if (!locals[cdt] || !locals[cdt][cdn] || locals[cdt][cdn].account !== account) {
+                    return;
+                }
+                frappe.model.set_value(cdt, cdn, "party_type", details.party_type || "");
+                if (Object.prototype.hasOwnProperty.call(details, "party")) {
+                    frappe.model.set_value(cdt, cdn, "party", details.party || "");
+                }
+                if (locals[cdt][cdn].purchase_invoice) {
+                    frappe.model.set_value(cdt, cdn, "purchase_invoice", "");
+                }
+            });
+        } else {
+            frappe.model.set_value(cdt, cdn, "party_type", "");
+            frappe.model.set_value(cdt, cdn, "party", "");
+            if (row.purchase_invoice) {
+                frappe.model.set_value(cdt, cdn, "purchase_invoice", "");
+            }
+        }
     },
 
     debit: function (frm) {
         // Recalculate total when debit amount changes
         calculate_total(frm);
+        if (!frm.is_new()) {
+            frm.trigger('make_dashboard');
+        }
     },
 
     accounting_entries_remove: function (frm) {
         // Recalculate total when row is removed
         calculate_total(frm);
+        if (!frm.is_new()) {
+            frm.trigger('make_dashboard');
+        }
+    },
+
+    party: function (frm, cdt, cdn) {
+        let row = locals[cdt][cdn];
+        if (row.purchase_invoice) {
+            frappe.model.set_value(cdt, cdn, "purchase_invoice", "");
+        }
+    },
+
+    employee_advance: function (frm) {
+        if (!frm.is_new()) {
+            frm.trigger('make_dashboard');
+        }
     }
 });
 
@@ -172,4 +221,42 @@ function calculate_total(frm) {
         total += flt(row.debit);
     });
     frm.set_value('total_debit_amount', total);
+}
+
+function get_debit_totals_from_grid(frm) {
+    let grand_total = 0;
+    let employee_advance_linked_total = 0;
+    (frm.doc.accounting_entries || []).forEach(function (row) {
+        const d = flt(row.debit);
+        grand_total += d;
+        if (row.employee_advance) {
+            employee_advance_linked_total += d;
+        }
+    });
+    return { grand_total: grand_total, employee_advance_linked_total: employee_advance_linked_total };
+}
+
+
+function get_account_details_for_party(account, company) {
+    if (!company) {
+        company =
+            frappe.defaults.get_user_default("Company") ||
+            (frappe.sys_defaults && frappe.sys_defaults.company);
+    }
+    if (!company || !account) {
+        return Promise.resolve({});
+    }
+    return frappe
+        .call({
+            method:
+                "erpnext.accounts.doctype.journal_entry.journal_entry.get_account_details_and_party_type",
+            args: {
+                account: account,
+                date: frappe.datetime.get_today(),
+                company: company,
+            },
+        })
+        .then(function (r) {
+            return r.message || {};
+        });
 }
